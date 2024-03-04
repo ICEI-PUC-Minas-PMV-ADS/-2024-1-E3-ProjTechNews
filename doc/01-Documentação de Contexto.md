@@ -14,8 +14,8 @@ Em resumo, a falta de conveniência e praticidade pode tornar o processo de enco
 
 # Objetivos
 
-O objetivo da aplicação é proporcionar um espaço para os usuários compartilharem notícias, com o intuito de auxiliar outras pessoas a economizar tempo e esforço na busca por informações relevantes. Almejamos criar uma plataforma colaborativa onde os usuários possam compartilhar notícias sobre temas que são importantes para eles e para a comunidade em geral. 
-Nosso objetivo é tornar a descoberta de informações relevantes mais fácil e eficiente, proporcionando uma experiência mais personalizada e adaptada aos interesses dos usuários.
+O objetivo principal do nosso aplicativo móvel é proporcionar uma experiência de consumo de notícias mais eficiente, personalizada e confiável para os usuários. Ao abordar os desafios identificados na introdução e no problema, buscamos criar uma plataforma que simplifique o acesso às informações desejadas, promovendo a conveniência, a confiança e o interesse contínuo dos usuários no consumo de notícias.
+
 # Justificativa
 
 De acordo com o Atlas da Notícia, um estudo anual sobre jornalismo local no Brasil (de Sá, Nelson; 2023), foram identificados 14.444 veículos de comunicação no Brasil, sendo 5.245 online, o que evidencia a grande quantidade de fontes de informação, tornando a atividade de se manter atualizado sobre os mais diversos assuntos trabalhosa e demorada. 
