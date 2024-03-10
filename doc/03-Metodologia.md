@@ -59,9 +59,9 @@ O cronograma acima será realizado entre 01/02/24 e 23/06/24, com participação
 Plano de Gerenciamento de Cronograma para o Desenvolvimento de um Aplicativo Agregador de Notícias
 ## 1. Introdução
 
-Este plano de gerenciamento de cronograma é desenvolvido com base nas práticas recomendadas pelo Guia PMBoK (Project Management Body of Knowledge) e tem como objetivo fornecer uma estrutura para o desenvolvimento eficaz de um aplicativo agregador de notícias. O projeto visa criar uma plataforma que permita aos usuários acessar e consumir uma variedade de notícias de fontes diversas, consolidadas em uma única interface.
+Este Plano é desenvolvido com base nas práticas recomendadas pelo Guia PMBoK (Project Management Body of Knowledge) e tem como objetivo fornecer uma estrutura para o desenvolvimento eficaz de um aplicativo agregador de notícias. O projeto visa criar uma plataforma que permita aos usuários acessar e consumir uma variedade de notícias de fontes diversas, consolidadas em uma única interface.
 
-# 2. Processos de Gerenciamento de Cronograma
+## 2. Processos de Gerenciamento de Cronograma
 
 2.1. Planejar o Gerenciamento do Cronograma:
     • Desenvolver uma estratégia para criar, manter e controlar o cronograma do projeto.
