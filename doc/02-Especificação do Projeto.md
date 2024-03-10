@@ -220,6 +220,7 @@ Este plano de gerenciamento de cronograma fornecerá uma estrutura eficaz para d
 
 
 ## Gerenciamento de Tempo
+Executado de acordo com o cronograma.
 
 ## Gerenciamento de Equipe
 
