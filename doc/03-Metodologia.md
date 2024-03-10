@@ -24,11 +24,6 @@ A ferramenta de controle de versão adotada no projeto é o Git, sendo que o Git
 
 
 
-## Gerenciamento de Projeto
-
-
-
-
 
 
 
