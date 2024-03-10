@@ -57,9 +57,11 @@ O cronograma acima será realizado entre 01/02/24 e 23/06/24, com participação
 ## Plano de Gerenciamento de Cronograma
 
 Plano de Gerenciamento de Cronograma para o Desenvolvimento de um Aplicativo Agregador de Notícias
-1. Introdução
+## 1. Introdução
+
 Este plano de gerenciamento de cronograma é desenvolvido com base nas práticas recomendadas pelo Guia PMBoK (Project Management Body of Knowledge) e tem como objetivo fornecer uma estrutura para o desenvolvimento eficaz de um aplicativo agregador de notícias. O projeto visa criar uma plataforma que permita aos usuários acessar e consumir uma variedade de notícias de fontes diversas, consolidadas em uma única interface.
-2. Processos de Gerenciamento de Cronograma
+
+## 2. Processos de Gerenciamento de Cronograma
 2.1. Planejar o Gerenciamento do Cronograma:
     • Desenvolver uma estratégia para criar, manter e controlar o cronograma do projeto.
     • Identificar as ferramentas e técnicas a serem utilizadas para o desenvolvimento do cronograma.
@@ -81,22 +83,25 @@ Este plano de gerenciamento de cronograma é desenvolvido com base nas práticas
     • Monitorar regularmente o progresso do projeto em relação ao cronograma planejado.
     • Identificar desvios do cronograma e tomar medidas corretivas, se necessário.
     • Atualizar o cronograma conforme mudanças ocorrem ao longo do projeto.
-3. Ferramentas e Técnicas
+    
+## 3. Ferramentas e Técnicas
     • Software de Gerenciamento de Projetos: Utilização de ferramentas como Microsoft Project, Primavera, ou outras plataformas de gerenciamento de projetos para desenvolver e controlar o cronograma.
     • Diagrama de Rede: Representação visual das atividades e suas dependências por meio de diagramas como o Diagrama de Rede de Precedência (Precedence Diagramming Method - PDM).
     • Análise do Caminho Crítico (Critical Path Analysis): Identificação das atividades críticas que determinam a duração total do projeto.
     • Reuniões de Revisão do Cronograma: Encontros regulares com a equipe do projeto para revisar o progresso do cronograma e tomar decisões sobre quaisquer mudanças necessárias.
-4. Papéis e Responsabilidades
+    
+## 4. Papéis e Responsabilidades
     • Gerente de Projeto: Responsável pelo desenvolvimento, controle e atualização do cronograma do projeto.
     • Equipe do Projeto: Responsável por fornecer informações precisas sobre o progresso das atividades e quaisquer desvios do cronograma planejado.
-5. Controle de Mudanças no Cronograma
+    
+## 5. Controle de Mudanças no Cronograma
 Será estabelecido um processo formal de controle de mudanças para lidar com quaisquer desvios do cronograma planejado. Todas as mudanças propostas serão avaliadas quanto ao seu impacto no cronograma do projeto e aprovadas ou rejeitadas pelo comitê de controle de mudanças.
-6. Comunicação do Cronograma
+
+## 6. Comunicação do Cronograma
 O cronograma do projeto será comunicado regularmente à equipe do projeto e às partes interessadas relevantes. As atualizações do cronograma serão compartilhadas por meio de relatórios de status e reuniões de acompanhamento do projeto.
-7. Conclusão
+
+## 7. Conclusão
 Este plano de gerenciamento de cronograma fornecerá uma estrutura eficaz para desenvolver, controlar e manter o cronograma do projeto de desenvolvimento do aplicativo agregador de notícias. Ao seguir as práticas recomendadas pelo Guia PMBoK, garantiremos que o projeto seja concluído dentro do prazo e atenda aos requisitos do cliente e das partes interessadas.
 
 
-
-xxx
 
