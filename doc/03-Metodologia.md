@@ -9,7 +9,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 |Ambiente                       |Plataforma  |Link de acesso                                                                                                          |
 |---------------------------    |----------  |------------------------------------------------------------------------------------------------------------------------|
 |Repositório de código-fonte    |GitHub      |https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/src/README.md|
-|Gerenciamento do projeto       |GitHub Projects|https://https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/895|
+|Gerenciamento do projeto       |GitHub Projects|https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/895|
 |Gerenciamento de wireframes    |Figma|https://www.figma.com/| 
 |Gerenciamento de código-fonte|Visual Studio|https://code.visualstudio.com/docs/?dv=win|
 |Serviço de hospedagem da aplicação|replit|https://replit.com/|                   
