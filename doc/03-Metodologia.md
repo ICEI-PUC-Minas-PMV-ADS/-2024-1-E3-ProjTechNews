@@ -62,17 +62,21 @@ Plano de Gerenciamento de Cronograma para o Desenvolvimento de um Aplicativo Agr
 Este plano de gerenciamento de cronograma é desenvolvido com base nas práticas recomendadas pelo Guia PMBoK (Project Management Body of Knowledge) e tem como objetivo fornecer uma estrutura para o desenvolvimento eficaz de um aplicativo agregador de notícias. O projeto visa criar uma plataforma que permita aos usuários acessar e consumir uma variedade de notícias de fontes diversas, consolidadas em uma única interface.
 
 ## 2. Processos de Gerenciamento de Cronograma
+
 2.1. Planejar o Gerenciamento do Cronograma:
     • Desenvolver uma estratégia para criar, manter e controlar o cronograma do projeto.
     • Identificar as ferramentas e técnicas a serem utilizadas para o desenvolvimento do cronograma.
     • Definir os critérios de medição de desempenho do cronograma.
+    
 2.2. Definir as Atividades:
     • Identificar e documentar as atividades necessárias para completar o projeto.
     • Estabelecer a sequência lógica das atividades.
     • Identificar os recursos necessários para cada atividade.
+    
 2.3. Sequenciar as Atividades:
     • Estabelecer a ordem cronológica das atividades, levando em consideração as dependências entre elas.
     • Identificar as relações de precedência entre as atividades.
+    
 2.4. Estimar a Duração das Atividades:
     • Estimar a quantidade de trabalho e recursos necessários para cada atividade.
     • Utilizar técnicas como a estimativa análoga, paramétrica ou de três pontos para estimar a duração das atividades.
