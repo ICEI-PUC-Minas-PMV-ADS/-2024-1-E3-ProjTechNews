@@ -132,28 +132,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar projetos, e que caracterizam a multidisciplinaridade envolvida, são: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições, Partes Interessadas. Para desenvolver projetos um profissional deve se preocupar em gerenciar todas essas dez áreas. Elas se complementam e se relacionam, de tal forma que não se deve apenas examinar uma área de forma estanque. É preciso considerar, por exemplo, que as áreas de Escopo, Cronograma e Custos estão muito relacionadas. Assim, se eu amplio o escopo de um projeto eu posso afetar seu cronograma e seus custos.
 
-A equipe utiliza metodologias ágeis para gerenciar e desenvolver o projeto, tendo o Scrum como base.
-O grupo está organizado da seguinte forma:
-
-   - **Scrum Master:** Guilherme da Silva Santos Júnior
-   - **Product Owner:** Emile Muniz Ramos
-   - **Equipe de Desenvolvimento:**
-           - Paulo Romano da Silva
-           - Pedro Henrique Aguilar de Almeida
-           - Pedro Henrique Batista Costa
-           - Lucas Henrique Vasconcelos Siqueira
-
-Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Projects nativo do Github, estruturado com as seguintes listas: 
-
-- **To Do:** Esta lista representa o Sprint Backlog. Este é o Sprint atual que está sendo trabalhado.
-- **Doing:** Quando uma tarefa tiver sido atribuída a um dos membros, ela é movida para essa seção.
-- **Done:** nesta seção são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário.
-
-
-O backlog pode ser acessado pelo link https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/895.
-
-**![](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/895/views/1)**
-
 ## Gerenciamento de Cronograma
 
 Segue o cronograma de execução das tarefas.
@@ -217,14 +195,29 @@ O cronograma do projeto será comunicado regularmente à equipe do projeto e às
 ## 7. Conclusão
 Este plano de gerenciamento de cronograma fornecerá uma estrutura eficaz para desenvolver, controlar e manter o cronograma do projeto de desenvolvimento do aplicativo agregador de notícias. Ao seguir as práticas recomendadas pelo Guia PMBoK, garantiremos que o projeto seja concluído dentro do prazo e atenda aos requisitos do cliente e das partes interessadas.
 
-
-
-## Gerenciamento de Tempo
-Executado de acordo com o cronograma.
-
 ## Gerenciamento de Equipe
 
 O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados.
+
+A equipe utiliza metodologias ágeis para gerenciar e desenvolver o projeto, tendo o Scrum como base.
+O grupo está organizado da seguinte forma:
+
+   - **Scrum Master:** Guilherme da Silva Santos Júnior
+   - **Product Owner:** Emile Muniz Ramos
+   - **Equipe de Desenvolvimento:**
+           - Paulo Romano da Silva
+           - Pedro Henrique Aguilar de Almeida
+           - Pedro Henrique Batista Costa
+           - Lucas Henrique Vasconcelos Siqueira
+
+Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Projects nativo do Github, estruturado com as seguintes listas: 
+
+- **To Do:** Esta lista representa o Sprint Backlog. Este é o Sprint atual que está sendo trabalhado.
+- **Doing:** Quando uma tarefa tiver sido atribuída a um dos membros, ela é movida para essa seção.
+- **Done:** nesta seção são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário.
+
+
+O backlog pode ser acessado pelo link https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/895.
 
 ## Gestão de Orçamento
 
