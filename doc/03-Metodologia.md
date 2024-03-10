@@ -40,7 +40,7 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 - **Done:** nesta seção são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário.
 
 
-O backlog pode ser acessado pelo link https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/566/views/1.
+O backlog pode ser acessado pelo link https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/895.
 
-**![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t1-time4-agregador-noticias/blob/main/docs/img/projects.png)**
+**![](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/895/views/1)**
 
