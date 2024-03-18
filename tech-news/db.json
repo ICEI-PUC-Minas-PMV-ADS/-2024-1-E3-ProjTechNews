@@ -1,0 +1,22 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "YouTube now requires to label their realistic-looking videos made using AI",
+      "autor": "Pedro Batista",
+      "url": "https://blog.google/intl/en-in/products/platforms/how-were-helping-creators-disclose-altered-or-synthetic-content/"
+    },
+    {
+      "id": 2,
+      "titulo": "Oh Sh*t, My App is Successful and I Didn’t Think About Accessibility",
+      "autor": "Pedro Batista",
+      "url": "https://jacobbartlett.substack.com/p/oh-sht-my-app-is-successful-and-i"
+    },
+    {
+      "id": 3,
+      "titulo": "Look ma, I wrote a new JIT compiler for PostgreSQL",
+      "autor": "Pedro Batista",
+      "url": "https://www.pinaraf.info/2024/03/look-ma-i-wrote-a-new-jit-compiler-for-postgresql/"
+    }
+  ]
+}
