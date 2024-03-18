@@ -1,13 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { View } from 'react-native';
-import Home from './components/screens/Home';
+import { NewsProvider } from './src/contexts/userContext';
+import HomeScreen from './src/components/screens/Home';
 
 const App = () => {
   return (
-    <View>
-      <Home/>
-      <StatusBar style="auto" />
-    </View>
+    <NewsProvider>
+      <View style={{ flex: 1 }}>
+        <HomeScreen />
+      </View>
+    </NewsProvider>
   );
 };
 
