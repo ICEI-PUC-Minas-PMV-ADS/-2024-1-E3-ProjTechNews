@@ -1,9 +1,8 @@
 import styled from 'styled-components/native';
 
-export const Header = styled.Text`
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 16px;
+export const HomeContainer = styled.View`
+  width: 100%;
+  height: 100%;
 `;
 
 export const Footer = styled.Text`
