@@ -1,6 +1,8 @@
 import styled from 'styled-components/native';
 
-export const LogoContainer = styled.View``;
+export const LogoContainer = styled.View`
+  display: flex;
+`;
 
 export const LogoButton = styled.TouchableOpacity`
   /* height: 4rem; */

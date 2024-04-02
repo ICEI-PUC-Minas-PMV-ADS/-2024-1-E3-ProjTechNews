@@ -27,7 +27,7 @@ const NewsCard: React.FC = () => {
       <NewsItemContainer>
         <NewsTitle>{item.titulo}</NewsTitle>
         <NewsAuthor>Por {item.autor}</NewsAuthor>
-        <NewsLink>{item.url}</NewsLink>
+        {/* <NewsLink>{item.url}</NewsLink> */}
       </NewsItemContainer>
     </TouchableOpacity>
   );
