@@ -1,14 +1,15 @@
 import React from 'react';
 import NewsCard from '../../NewsCard';
-import { Footer, Header, } from './styles';
+import { Footer, HomeContainer } from './styles';
+import Header from '../../Header';
 
 const Home = () => {
   return (
-    <>
-      <Header>Ultimas noticias</Header>
+    <HomeContainer>
+      <Header />
       <NewsCard />
       <Footer>puc minas</Footer>
-    </>
+    </HomeContainer>
   );
 };
 
