@@ -1,13 +1,13 @@
 import React from 'react';
 import { View } from 'react-native';
 import { NewsProvider } from './src/contexts/userContext';
-import Home from './src/components/screens/Home';
+import Routes from './src/routes';
 
 const App = () => {
   return (
     <NewsProvider>
       <View style={{ flex: 1 }}>
-        <Home />
+        <Routes />
       </View>
     </NewsProvider>
   );
