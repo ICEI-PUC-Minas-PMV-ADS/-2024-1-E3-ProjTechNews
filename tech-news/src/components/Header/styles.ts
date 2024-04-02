@@ -4,9 +4,9 @@ export const HeaderContainer = styled.View`
   height: 5rem;
   width: 100%;
   display: flex;
-  /* flex-direction: row; */
-  /* align-items: space-around; */
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 `;
 
 export const LoginButton = styled.TouchableOpacity``;
