@@ -10,7 +10,7 @@ type ButtonProps = {
 export const ButtonContainer = styled(TouchableOpacity)<ButtonProps>`
   flex: 1;
 
-  max-width: 56px;
+  min-height: 56px;
   max-height: 56px;
 
   background-color: ${({ theme, type }) =>
