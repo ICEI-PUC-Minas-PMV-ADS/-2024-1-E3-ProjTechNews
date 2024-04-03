@@ -10,9 +10,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-- Emile Muniz Ramos
 - Guilherme Da Silva Santos Júnior
-- Lucas Henrique Vasconcelos Siqueira
 - Paulo Romano da Silva
 - Pedro Henrique Aguilar de Almeida
 - Pedro Henrique Batista Costa
