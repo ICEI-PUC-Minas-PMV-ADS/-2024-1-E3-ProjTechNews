@@ -10,6 +10,6 @@ export const LogoButton = styled.TouchableOpacity`
 `;
 
 export const LogoText = styled.Text`
-  color: #333;
+  color: ${({ theme }) => theme.COLORS.WHITE};
   font-size: 16px;
 `;
