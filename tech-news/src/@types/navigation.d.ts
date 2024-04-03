@@ -4,7 +4,7 @@ export declare global {
       login: undefined;
       signUp: undefined;
       home: undefined;
-      addNew: undefined;
+      addNews: undefined;
     }
   }
 }
