@@ -1,8 +1,8 @@
-# Arquitetura da Solução
+# Arquitetura da SoluÃ§Ã£o
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
+<span style="color:red">PrÃ©-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+DefiniÃ§Ã£o de como o software Ã© estruturado em termos dos componentes que fazem parte da soluÃ§Ã£o e do ambiente de hospedagem da aplicaÃ§Ã£o.
 
 ## Diagrama de Classes
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/doc/img/diagrama%20de%20classes.24.09%20.jpg?raw=true)
@@ -17,42 +17,59 @@ Definição de como o software é estruturado em termos dos componentes que fazem p
 ## Projeto da Base de Dados
 
 ![Projeto da Base de Dados](https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/doc/img/projeto%20da%20base%20de%20dados.png?raw=true)
-O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
+O projeto da base de dados corresponde Ã  representaÃ§Ã£o das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primÃ¡rias/estrangeiras necessÃ¡rias para representar corretamente as restriÃ§Ãµes de integridade.
  
-Para mais informações, consulte o microfundamento "Modelagem de Dados".
+Para mais informaÃ§Ãµes, consulte o microfundamento "Modelagem de Dados".
 
-## Modelo Físico
+## Modelo FÃ­sico
 
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+Entregar um arquivo banco.sql contendo os scripts de criaÃ§Ã£o das tabelas do banco de dados. Este arquivo deverÃ¡ ser incluÃ­do dentro da pasta src\bd.
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+Descreva aqui qual(is) tecnologias vocÃª vai usar para resolver o seu problema, ou seja, implementar a sua soluÃ§Ã£o. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviÃ§os web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+Apresente tambÃ©m uma figura explicando como as tecnologias estÃ£o relacionadas ou como uma interaÃ§Ã£o do usuÃ¡rio com o sistema vai ser conduzida, por onde ela passa atÃ© retornar uma resposta ao usuÃ¡rio.
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+Explique como a hospedagem e o lanÃ§amento da plataforma foi feita.
 
-> **Links Úteis**:
+> **Links Ãšteis**:
 >
 > - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
+> - [ProgramaÃ§Ã£o colaborativa com Repl.it](https://repl.it/)
 > - [Getting Started with Heroku](https://devcenter.heroku.com/start)
 > - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
 
 ## Qualidade de Software
 
-Conceituar qualidade de fato é uma tarefa complexa, mas ela pode ser vista como um método gerencial que através de procedimentos disseminados por toda a organização, busca garantir um produto final que satisfaça às expectativas dos stakeholders.
+A qualidade do produto de software procura equilibrar trÃªs fatores: (a) a qualidade intrÃ­nseca do produto, (b) seu custo e (c) o atendimento, isto Ã©, a quantidade certa no local certo e no momento certo.
+A qualidade de software, conforme definido pela ISO/IEC 25010 (atualizaÃ§Ã£o da ISO/IEC 9126), refere-se Ã s caracterÃ­sticas e propriedades de um software que determinam seu grau de satisfaÃ§Ã£o em atender Ã s necessidades explÃ­citas e implÃ­citas do usuÃ¡rio. 
 
-No contexto de desenvolvimento de software, qualidade pode ser entendida como um conjunto de características a serem satisfeitas, de modo que o produto de software atenda às necessidades de seus usuários. Entretanto, tal nível de satisfação nem sempre é alcançado de forma espontânea, devendo ser continuamente construído. Assim, a qualidade do produto depende fortemente do seu respectivo processo de desenvolvimento.
+Essas caracterÃ­sticas sÃ£o agrupadas em oito atributos principais:
 
-A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software.
-Com base nessas características e nas respectivas sub-características, identifique as sub-características que sua equipe utilizará como base para nortear o desenvolvimento do projeto de software considerando-se alguns aspectos simples de qualidade. Justifique as subcaracterísticas escolhidas pelo time e elenque as métricas que permitirão a equipe avaliar os objetos de interesse.
+Funcionalidade: Refere-se Ã  capacidade do software de fornecer funÃ§Ãµes que atendam aos requisitos especificados e Ã s necessidades implÃ­citas do usuÃ¡rio. Exemplo na engenharia de software: um sistema de gerenciamento de vendas que permite registrar, processar e analisar pedidos de clientes.
 
-> **Links Úteis**:
+Confiabilidade: Diz respeito Ã  capacidade do software de manter um nÃ­vel de desempenho esperado em condiÃ§Ãµes especÃ­ficas durante um perÃ­odo de tempo determinado. Por exemplo, um sistema bancÃ¡rio que nÃ£o falha ao processar transaÃ§Ãµes crÃ­ticas.
+
+Usabilidade: Refere-se Ã  facilidade de uso e compreensÃ£o do software pelo usuÃ¡rio final. Um exemplo seria um aplicativo de ediÃ§Ã£o de fotos que possui uma interface intuitiva e recursos de ajuda para orientar novos usuÃ¡rios.
+
+EficiÃªncia: Relaciona-se Ã  capacidade do software de utilizar recursos de forma adequada para realizar suas funÃ§Ãµes, como memÃ³ria, processamento e largura de banda. Por exemplo, um sistema de gerenciamento de banco de dados que otimiza consultas para melhorar o desempenho.
+
+Manutenibilidade: Refere-se Ã  facilidade com que o software pode ser modificado, corrigido e adaptado para atender a novos requisitos ou mudanÃ§as no ambiente. Por exemplo, um sistema de controle de estoque que permite adicionar novos recursos sem afetar o funcionamento geral.
+
+Portabilidade: Diz respeito Ã  capacidade do software de ser transferido entre diferentes ambientes de execuÃ§Ã£o sem a necessidade de modificaÃ§Ãµes excessivas. Um exemplo seria um aplicativo mÃ³vel que funciona em diferentes sistemas operacionais sem perda significativa de funcionalidade.
+
+SeguranÃ§a: Refere-se Ã  capacidade do software de proteger dados, sistemas e recursos contra acesso nÃ£o autorizado, falhas e outros ataques. Por exemplo, um sistema de pagamento online que utiliza criptografia para proteger informaÃ§Ãµes sensÃ­veis do cliente.
+
+Compatibilidade: Relaciona-se Ã  capacidade do software de interoperar com outros sistemas, produtos ou componentes sem problemas. Um exemplo seria um navegador da web que Ã© compatÃ­vel com vÃ¡rios padrÃµes da web e pode exibir corretamente diferentes tipos de conteÃºdo.
+
+Esses atributos de qualidade sÃ£o essenciais na engenharia de software e em diversas outras aplicaÃ§Ãµes para garantir que o software atenda Ã s expectativas dos usuÃ¡rios, seja confiÃ¡vel, seguro e fÃ¡cil de usar, alÃ©m de permitir modificaÃ§Ãµes e adaptaÃ§Ãµes conforme necessÃ¡rio.
+
+
+> **Links Ãšteis**:
 >
-> - [ISO/IEC 25010:2011 - Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models](https://www.iso.org/standard/35733.html/)
-> - [Análise sobre a ISO 9126 – NBR 13596](https://www.tiespecialistas.com.br/analise-sobre-iso-9126-nbr-13596/)
+> - [ISO/IEC 25010:2011 - Systems and software engineering â€” Systems and software Quality Requirements and Evaluation (SQuaRE) â€” System and software quality models](https://www.iso.org/standard/35733.html/)
+> - [AnÃ¡lise sobre a ISO 9126 â€“ NBR 13596](https://www.tiespecialistas.com.br/analise-sobre-iso-9126-nbr-13596/)
 > - [Qualidade de Software - Engenharia de Software 29](https://www.devmedia.com.br/qualidade-de-software-engenharia-de-software-29/18209/)
