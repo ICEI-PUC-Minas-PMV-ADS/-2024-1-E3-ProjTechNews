@@ -1,8 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\doc"
+    "\\doc",
+    "\\tech-news",
+    "\\tech-news\\src",
+    "\\tech-news\\src\\@types",
+    "\\tech-news\\src\\components",
+    "\\tech-news\\src\\contexts",
+    "\\tech-news\\src\\lib",
+    "\\tech-news\\src\\routes",
+    "\\tech-news\\src\\themes"
   ],
-  "SelectedNode": "\\doc\\02-Especificação do Projeto.md",
+  "SelectedNode": "\\tech-news\\db.json",
   "PreviewInSolutionExplorer": false
 }
