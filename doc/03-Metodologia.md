@@ -18,7 +18,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 
 A ferramenta de controle de versão adotada no projeto é o Git, sendo que o Github foi utilizado para hospedagem do repositório, utilizando-se de branches para realizar as atualizações no código fonte.
 
- **![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t1-time4-agregador-noticias/blob/main/docs/img/branch%20guide.png)**
+ **![](https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/doc/img/branch%20guide.png?raw=true)**
 
 # Gerenciamento de Projeto
 Optamos por utilizar a metodologia Ágil, sendo escolhido o Scrum como base para definição do processo de desenvolvimento do projeto.

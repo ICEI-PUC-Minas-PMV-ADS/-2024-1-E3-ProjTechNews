@@ -1,11 +1,11 @@
 # Projeto de Interface
 *Fluxo usuário*
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t1-time4-agregador-noticias/assets/111918966/9b473241-20f2-4e12-95b6-25d2ba02cc34)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/doc/img/Fluxo%20usuario.png?raw=true)
 
 *Fluxo administrador*
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t1-time4-agregador-noticias/assets/111918966/f2d4a0b2-ba64-473a-b42d-d6a83fff9e75)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/doc/img/Fluxo%20admin.png?raw=true)
 
 O projeto busca atender as expectivas do usuário de maneira simples e dinamica, onde o foco é simplesmente a notícia. Mantendo uma interface limpa e responsiva ao desktop e dispositivos móveis.
 
