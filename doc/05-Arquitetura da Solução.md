@@ -1,8 +1,8 @@
-# Arquitetura da Solução
+# Arquitetura da SoluÃ§Ã£o
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
+<span style="color:red">PrÃ©-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+DefiniÃ§Ã£o de como o software Ã© estruturado em termos dos componentes que fazem parte da soluÃ§Ã£o e do ambiente de hospedagem da aplicaÃ§Ã£o.
 
 ## Diagrama de Classes
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/doc/img/diagrama%20de%20classes.24.09%20.jpg?raw=true)
@@ -17,42 +17,42 @@ Definição de como o software é estruturado em termos dos componentes que fazem p
 ## Projeto da Base de Dados
 
 ![Projeto da Base de Dados](https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/doc/img/projeto%20da%20base%20de%20dados.png?raw=true)
-O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
+O projeto da base de dados corresponde Ã  representaÃ§Ã£o das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primÃ¡rias/estrangeiras necessÃ¡rias para representar corretamente as restriÃ§Ãµes de integridade.
  
-Para mais informações, consulte o microfundamento "Modelagem de Dados".
+Para mais informaÃ§Ãµes, consulte o microfundamento "Modelagem de Dados".
 
-## Modelo Físico
+## Modelo FÃ­sico
 
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+Entregar um arquivo banco.sql contendo os scripts de criaÃ§Ã£o das tabelas do banco de dados. Este arquivo deverÃ¡ ser incluÃ­do dentro da pasta src\bd.
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+Descreva aqui qual(is) tecnologias vocÃª vai usar para resolver o seu problema, ou seja, implementar a sua soluÃ§Ã£o. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviÃ§os web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+Apresente tambÃ©m uma figura explicando como as tecnologias estÃ£o relacionadas ou como uma interaÃ§Ã£o do usuÃ¡rio com o sistema vai ser conduzida, por onde ela passa atÃ© retornar uma resposta ao usuÃ¡rio.
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+Explique como a hospedagem e o lanÃ§amento da plataforma foi feita.
 
-> **Links Úteis**:
+> **Links Ãšteis**:
 >
 > - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
+> - [ProgramaÃ§Ã£o colaborativa com Repl.it](https://repl.it/)
 > - [Getting Started with Heroku](https://devcenter.heroku.com/start)
 > - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
 
 ## Qualidade de Software
 
-Conceituar qualidade de fato é uma tarefa complexa, mas ela pode ser vista como um método gerencial que através de procedimentos disseminados por toda a organização, busca garantir um produto final que satisfaça às expectativas dos stakeholders.
+Conceituar qualidade de fato Ã© uma tarefa complexa, mas ela pode ser vista como um mÃ©todo gerencial que atravÃ©s de procedimentos disseminados por toda a organizaÃ§Ã£o, busca garantir um produto final que satisfaÃ§a Ã s expectativas dos stakeholders.
 
-No contexto de desenvolvimento de software, qualidade pode ser entendida como um conjunto de características a serem satisfeitas, de modo que o produto de software atenda às necessidades de seus usuários. Entretanto, tal nível de satisfação nem sempre é alcançado de forma espontânea, devendo ser continuamente construído. Assim, a qualidade do produto depende fortemente do seu respectivo processo de desenvolvimento.
+No contexto de desenvolvimento de software, qualidade pode ser entendida como um conjunto de caracterÃ­sticas a serem satisfeitas, de modo que o produto de software atenda Ã s necessidades de seus usuÃ¡rios. Entretanto, tal nÃ­vel de satisfaÃ§Ã£o nem sempre Ã© alcanÃ§ado de forma espontÃ¢nea, devendo ser continuamente construÃ­do. Assim, a qualidade do produto depende fortemente do seu respectivo processo de desenvolvimento.
 
-A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software.
-Com base nessas características e nas respectivas sub-características, identifique as sub-características que sua equipe utilizará como base para nortear o desenvolvimento do projeto de software considerando-se alguns aspectos simples de qualidade. Justifique as subcaracterísticas escolhidas pelo time e elenque as métricas que permitirão a equipe avaliar os objetos de interesse.
+A norma internacional ISO/IEC 25010, que Ã© uma atualizaÃ§Ã£o da ISO/IEC 9126, define oito caracterÃ­sticas e 30 subcaracterÃ­sticas de qualidade para produtos de software.
+Com base nessas caracterÃ­sticas e nas respectivas sub-caracterÃ­sticas, identifique as sub-caracterÃ­sticas que sua equipe utilizarÃ¡ como base para nortear o desenvolvimento do projeto de software considerando-se alguns aspectos simples de qualidade. Justifique as subcaracterÃ­sticas escolhidas pelo time e elenque as mÃ©tricas que permitirÃ£o a equipe avaliar os objetos de interesse.
 
-> **Links Úteis**:
+> **Links Ãšteis**:
 >
-> - [ISO/IEC 25010:2011 - Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models](https://www.iso.org/standard/35733.html/)
-> - [Análise sobre a ISO 9126 – NBR 13596](https://www.tiespecialistas.com.br/analise-sobre-iso-9126-nbr-13596/)
+> - [ISO/IEC 25010:2011 - Systems and software engineering â€” Systems and software Quality Requirements and Evaluation (SQuaRE) â€” System and software quality models](https://www.iso.org/standard/35733.html/)
+> - [AnÃ¡lise sobre a ISO 9126 â€“ NBR 13596](https://www.tiespecialistas.com.br/analise-sobre-iso-9126-nbr-13596/)
 > - [Qualidade de Software - Engenharia de Software 29](https://www.devmedia.com.br/qualidade-de-software-engenharia-de-software-29/18209/)
