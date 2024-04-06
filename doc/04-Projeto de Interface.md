@@ -1,5 +1,5 @@
 # Projeto de Interface
-*Fluxo usu·rio*
+*Fluxo usu√°rio*
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/doc/img/Fluxo%20usuario.png?raw=true)
 
@@ -7,57 +7,39 @@
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/doc/img/Fluxo%20admin.png?raw=true)
 
-O projeto busca atender as expectivas do usu·rio de maneira simples e dinamica, onde o foco È simplesmente a notÌcia. Mantendo uma interface limpa e responsiva ao desktop e dispositivos mÛveis.
+O projeto busca atender as expectivas do usu√°rio de maneira simples e dinamica, onde o foco √© simplesmente a not√≠cia. Mantendo uma interface limpa e responsiva ao desktop e dispositivos m√≥veis.
 
 ## User Flow
 
-![UserFlow](img/wireframes/projeto_front_end_puc_wireframe_ads2.png)
+![UserFlow](https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/doc/img/userflow.png)
 
 ## Wireframes
 
-Conforme o fluxo do usu·rio apresentado no item anterior, a interface È dividida em duas grandes partes:
+Conforme o fluxo do usu√°rio apresentado no item anterior, a interface √© dividida em duas grandes partes:
 
-- CabeÁalho - Local onde encontramos a logo e o menu de navegaÁ„o principal;
-- Conte˙do - Local onde encontramos da tela em quest„o.
+- Cabe√ßalho - Local onde encontramos a logo e o menu de navega√ß√£o principal;
+- Conte√∫do - Local onde encontramos da tela em quest√£o.
 
 ### Tela Home Page
 
-Tela principal onde o usu·rio encontrar· as ˙ltimas notÌcias postadas. PorÈm o usu·rio somente conseguir· postar alguma notÌcia depois de fazer seu log in.
+Tela principal onde o usu√°rio encontrar√° as √∫ltimas not√≠cias postadas. Por√©m o usu√°rio somente conseguir√° postar alguma not√≠cia depois de fazer seu log in.
 
-![home_without_user_logged_in](img/wireframes/Home_without_user_logged_in.png)
+![home](https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/doc/img/home.png)
 
 ### Tela de log in
 
-Tela onde o usu·rio far· seu log in no site ou caso ainda n„o o tenha, criar· um novo usu·rio.
+Tela onde o usu√°rio far√° seu log in no site ou caso ainda n√£o o tenha, criar√° um novo usu√°rio.
 
-![login_page](img/wireframes/Login_page.png)
+![login_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/doc/img/login.png)
 
-### Tela de Administrador
+### Tela de novo usu√°rio
 
-Tela onde o administrador ir· gerenciar os usu·rios.
+Tela onde o usu√°rio ir√° se cadastrar, caso ainda n√£o seja cadastrado.
 
-![admin_page](img/wireframes/Admin_page.png)
+![New_account_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/doc/img/signup.png)
 
-### Tela de novo usu·rio
+### Tela para nova not√≠cia
 
-Tela onde o usu·rio ir· se cadastrar, caso ainda n„o seja cadastrado.
+Tela onde o usu√°rio depois de ter realizado seu log in no site ter√° acesso e poder√° enviar sua n√≥tica para o portal.
 
-![New_account_page](img/wireframes/New_account_page.png)
-
-### Tela Home com usu·rio ativo
-
-Tela que ter· o cabelhado alterado apÛs o usu·rio realizar seu log in no site.
-
-![Home_with_user_logged_in](img/wireframes/Home_with_user_logged_in.png)
-
-### Tela para nova notÌcia
-
-Tela onde o usu·rio depois de ter realizado seu log in no site ter· acesso e poder· enviar sua nÛtica para o portal.
-
-![Submit_page](img/wireframes/Submit_page.png)
-
-### Tela Home com nova notÌcia
-
-Tela final onde a nÛticia que o usu·rio enviou e foi aceita ser· exibida.
-
-![Home_with_news](img/wireframes/Home_with_news.png)
+![Submit_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/doc/img/insertnews.png)
