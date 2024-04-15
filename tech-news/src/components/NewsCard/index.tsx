@@ -1,46 +1,28 @@
-import React, { useEffect } from 'react';
-import { View, Text, FlatList, TouchableOpacity, Linking } from 'react-native';
-import { useNews, News } from '../../contexts/userContext';
+import React from 'react';
 import {
-  Container,
+  NewsAuthor,
+  NewsCardContainer,
   NewsItemContainer,
   NewsTitle,
-  NewsAuthor,
-  NewsLink,
 } from './styles';
+import { Linking, Text, TouchableOpacityProps } from 'react-native';
 
-const NewsCard: React.FC = () => {
-  const { noticias, fetchNoticias } = useNews();
+type NewsCardProps = TouchableOpacityProps & {
+  title: string;
+  url: string;
+  author: string;
+};
 
-  useEffect(() => {
-    fetchNoticias();
-    // Chama a função para buscar as notícias
-  }, []);
-
-  const openNews = (url: string) => {
-    Linking.openURL(url);
-    // Abre o link da notícia no navegador do dispositivo
-  };
-
-  const renderNewsItem = ({ item }: { item: News }) => (
-    <TouchableOpacity onPress={() => openNews(item.url)}>
-      <NewsItemContainer>
-        <NewsTitle>{item.titulo}</NewsTitle>
-        <NewsAuthor>Por {item.autor}</NewsAuthor>
-        {/* <NewsLink>{item.url}</NewsLink> */}
-      </NewsItemContainer>
-    </TouchableOpacity>
-  );
-
+const NewsCard: React.FC<NewsCardProps> = ({ title, url, author, ...rest }) => {
   return (
-    <Container>
-      {/* <Header>Últimas Notícias</Header> */}
-      <FlatList
-        data={noticias}
-        renderItem={renderNewsItem}
-        keyExtractor={(item) => item.id.toString()}
-      />
-    </Container>
+    <NewsCardContainer {...rest}>
+      <NewsItemContainer>
+        <Text style={{ color: 'blue' }} onPress={() => Linking.openURL(url)}>
+          <NewsTitle>{title}</NewsTitle>
+        </Text>
+        <NewsAuthor>Por: {author}</NewsAuthor>
+      </NewsItemContainer>
+    </NewsCardContainer>
   );
 };
 

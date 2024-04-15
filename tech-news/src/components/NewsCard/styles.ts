@@ -1,7 +1,7 @@
 import { TouchableOpacity } from 'react-native';
 import styled from 'styled-components/native';
 
-export const Container = styled(TouchableOpacity)`
+export const NewsCardContainer = styled(TouchableOpacity)`
   width: 100%;
   height: auto;
 
@@ -17,7 +17,10 @@ export const Container = styled(TouchableOpacity)`
 `;
 
 export const NewsItemContainer = styled.View`
-  margin-bottom: 16px;
+  flex: 1;
+  flex-direction: column;
+
+  align-items: flex-end;
 `;
 
 export const NewsTitle = styled.Text`
