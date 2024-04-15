@@ -9,7 +9,6 @@ export const SignUpContainer = styled(SafeAreaView)`
 
 export const SignUpContent = styled.View`
   flex: 1;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
 `;
