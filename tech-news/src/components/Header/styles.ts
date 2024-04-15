@@ -8,7 +8,3 @@ export const HeaderContainer = styled.View`
   align-items: center;
   justify-content: space-around;
 `;
-
-export const LoginButton = styled.TouchableOpacity``;
-
-export const LoginText = styled.Text``;
