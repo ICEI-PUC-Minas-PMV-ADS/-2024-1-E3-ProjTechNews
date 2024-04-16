@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { StatusBar, View } from 'react-native';
 import {
   useFonts,
   Roboto_400Regular,
@@ -11,8 +11,7 @@ import { ThemeProvider } from 'styled-components/native';
 import themes from './src/themes';
 
 import Routes from './src/routes';
-
-import { NewsProvider } from './src/contexts/userContext';
+import UserProvider from './src/contexts/userContext';
 
 const App = () => {
   const [fontsLoaded] = useFonts({
@@ -22,11 +21,14 @@ const App = () => {
 
   return (
     <ThemeProvider theme={themes}>
-      <NewsProvider>
-        <View style={{ flex: 1 }}>
-          <Routes />
-        </View>
-      </NewsProvider>
+      <UserProvider>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor="transparent"
+          translucent
+        />
+        <Routes />
+      </UserProvider>
     </ThemeProvider>
   );
 };
