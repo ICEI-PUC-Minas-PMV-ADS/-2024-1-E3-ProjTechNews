@@ -1,55 +1,45 @@
 import React, {
   createContext,
-  useContext,
-  useEffect,
   useState,
+  useContext,
+  Dispatch,
   ReactNode,
 } from 'react';
-import axios from '../lib/axios';
 
-export interface News {
-  id: number;
-  titulo: string;
-  autor: string;
-  url: string;
+interface UserProviderProps {
+  children: ReactNode;
 }
 
-interface NewsContextData {
-  noticias: News[];
-  fetchNoticias: () => void;
+interface UserContextType {
+  signed: boolean;
+  setSigned?: Dispatch<React.SetStateAction<boolean>>;
+  userId: Number;
+  setUserId?: Dispatch<React.SetStateAction<Number>>;
 }
 
-const NewsContext = createContext<NewsContextData | undefined>(undefined);
+export const UserContext = createContext<UserContextType>({
+  signed: false,
+  userId: 0,
+});
 
-export const NewsProvider: React.FC<{ children: ReactNode }> = ({
-  children,
-}) => {
-  const [noticias, setNoticias] = useState<News[]>([]);
+export default function UserProvider({ children }: UserProviderProps) {
+  const [signed, setSigned] = useState(false);
+  const [userId, setUserId] = useState(0);
 
-  const fetchNoticias = async () => {
-    try {
-      const response = await axios.get('/noticias');
-      setNoticias(response.data);
-    } catch (error) {
-      console.error('Erro ao buscar notícias:', error);
-    }
+  const value: UserContextType = {
+    signed,
+    setSigned,
+    userId,
+    setUserId,
   };
 
-  useEffect(() => {
-    fetchNoticias();
-  }, []);
+  return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
+}
 
-  return (
-    <NewsContext.Provider value={{ noticias, fetchNoticias }}>
-      {children}
-    </NewsContext.Provider>
-  );
-};
+export function useUser() {
+  const context = useContext(UserContext);
 
-export function useNews(): NewsContextData {
-  const context = useContext(NewsContext);
-  if (!context) {
-    throw new Error('useNews must be used within a NewsProvider');
-  }
-  return context;
+  const { signed, setSigned, userId, setUserId } = context;
+
+  return { signed, setSigned, userId, setUserId };
 }
