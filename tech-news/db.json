@@ -1,76 +1,26 @@
 {
-  "noticias": [
+  "news": [
     {
-      "id": 1,
-      "titulo": "YouTube now requires to label their realistic-looking videos made using AI",
-      "autor": "Pedro Batista",
-      "url": "https://blog.google/intl/en-in/products/platforms/how-were-helping-creators-disclose-altered-or-synthetic-content/"
+      "title": "YouTube now requires to label their realistic-looking videos made using AI",
+      "url": "https://blog.google/intl/en-in/products/platforms/how-were-helping-creators-disclose-altered-or-synthetic-content/",
+      "createdAt": "2024-04-15T22:24:28.055Z",
+      "userId": 1,
+      "id": 1
     },
     {
-      "id": 2,
-      "titulo": "Oh Sh*t, My App is Successful and I Didn’t Think About Accessibility",
-      "autor": "Pedro Batista",
-      "url": "https://jacobbartlett.substack.com/p/oh-sht-my-app-is-successful-and-i"
-    },
+      "title": "T-Mobile Employees Across The Country Receive Cash Offers To Illegally Swap SIMs",
+      "url": "https://tmo.report/2024/04/t-mobile-employees-across-the-country-receive-cash-offers-to-illegally-swap-sims/",
+      "userId": 1,
+      "createdAt": "2024-04-15T23:31:18.284Z",
+      "id": 2
+    }
+  ],
+  "users": [
     {
-      "id": 3,
-      "titulo": "Look ma, I wrote a new JIT compiler for PostgreSQL",
-      "autor": "Pedro Batista",
-      "url": "https://www.pinaraf.info/2024/03/look-ma-i-wrote-a-new-jit-compiler-for-postgresql/"
-    },
-    {
-      "id": 4,
-      "titulo": "Look ma, I wrote a new JIT compiler for PostgreSQL",
-      "autor": "Pedro Batista",
-      "url": "https://www.pinaraf.info/2024/03/look-ma-i-wrote-a-new-jit-compiler-for-postgresql/"
-    },
-    {
-      "id": 5,
-      "titulo": "Look ma, I wrote a new JIT compiler for PostgreSQL",
-      "autor": "Pedro Batista",
-      "url": "https://www.pinaraf.info/2024/03/look-ma-i-wrote-a-new-jit-compiler-for-postgresql/"
-    },
-    {
-      "id": 6,
-      "titulo": "Look ma, I wrote a new JIT compiler for PostgreSQL",
-      "autor": "Pedro Batista",
-      "url": "https://www.pinaraf.info/2024/03/look-ma-i-wrote-a-new-jit-compiler-for-postgresql/"
-    },
-    {
-      "id": 7,
-      "titulo": "Look ma, I wrote a new JIT compiler for PostgreSQL",
-      "autor": "Pedro Batista",
-      "url": "https://www.pinaraf.info/2024/03/look-ma-i-wrote-a-new-jit-compiler-for-postgresql/"
-    },
-    {
-      "id": 8,
-      "titulo": "Look ma, I wrote a new JIT compiler for PostgreSQL",
-      "autor": "Pedro Batista",
-      "url": "https://www.pinaraf.info/2024/03/look-ma-i-wrote-a-new-jit-compiler-for-postgresql/"
-    },
-    {
-      "id": 9,
-      "titulo": "Look ma, I wrote a new JIT compiler for PostgreSQL",
-      "autor": "Pedro Batista",
-      "url": "https://www.pinaraf.info/2024/03/look-ma-i-wrote-a-new-jit-compiler-for-postgresql/"
-    },
-    {
-      "id": 10,
-      "titulo": "Look ma, I wrote a new JIT compiler for PostgreSQL",
-      "autor": "Pedro Batista",
-      "url": "https://www.pinaraf.info/2024/03/look-ma-i-wrote-a-new-jit-compiler-for-postgresql/"
-    },
-    {
-      "id": 11,
-      "titulo": "Look ma, I wrote a new JIT compiler for PostgreSQL",
-      "autor": "Pedro Batista",
-      "url": "https://www.pinaraf.info/2024/03/look-ma-i-wrote-a-new-jit-compiler-for-postgresql/"
-    },
-    {
-      "id": 12,
-      "titulo": "Look ma, I wrote a new JIT compiler for PostgreSQL",
-      "autor": "Pedro Batista",
-      "url": "https://www.pinaraf.info/2024/03/look-ma-i-wrote-a-new-jit-compiler-for-postgresql/"
+      "email": "pedro@exemplo.com",
+      "password": "$2a$10$yYTR8UJUPGwBrc.9RXzYC.vdIAc007mqipNsPdebpFhaNHooinfbq",
+      "name": "Pedro Costa",
+      "id": 1
     }
   ]
 }

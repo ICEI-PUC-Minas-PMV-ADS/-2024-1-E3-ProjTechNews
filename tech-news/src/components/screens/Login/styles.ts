@@ -9,7 +9,6 @@ export const LoginContainer = styled(SafeAreaView)`
 
 export const LoginContent = styled.View`
   flex: 1;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
 `;
