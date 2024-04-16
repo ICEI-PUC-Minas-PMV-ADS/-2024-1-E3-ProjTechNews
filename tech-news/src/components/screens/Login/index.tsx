@@ -10,7 +10,7 @@ import api from '../../../lib/axios';
 import { Alert } from 'react-native';
 
 const Login = () => {
-  const [email, setEmail] = useState('pedrobc@exemplo.com');
+  const [email, setEmail] = useState('pedro@exemplo.com');
   const [password, setPassword] = useState('123456');
   const { setSigned, setUserId } = useUser();
 
