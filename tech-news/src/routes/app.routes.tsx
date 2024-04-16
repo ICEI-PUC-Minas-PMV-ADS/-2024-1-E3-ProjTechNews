@@ -4,10 +4,12 @@ import Home from '../components/screens/Home';
 import Login from '../components/screens/Login';
 import SignUp from '../components/screens/SignUp';
 import AddNews from '../components/screens/AddNews';
+import { useUser } from '../contexts/userContext';
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
 const AppRoutes = () => {
+  const { signed } = useUser();
   return (
     <Navigator
       screenOptions={{
@@ -15,10 +17,17 @@ const AppRoutes = () => {
       }}
       initialRouteName="home"
     >
-      <Screen name="home" component={Home} />
-      <Screen name="login" component={Login} />
-      <Screen name="signUp" component={SignUp} />
-      <Screen name="addNews" component={AddNews} />
+      {signed ? (
+        <>
+          <Screen name="home" component={Home} />
+          <Screen name="addNews" component={AddNews} />
+        </>
+      ) : (
+        <>
+          <Screen name="login" component={Login} />
+          <Screen name="signUp" component={SignUp} />
+        </>
+      )}
     </Navigator>
   );
 };
