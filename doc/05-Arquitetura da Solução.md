@@ -19,7 +19,9 @@ Definição de como o software é estruturado em termos dos componentes que faze
 ![Projeto da Base de Dados](https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/doc/img/projeto%20da%20base%20de%20dados.png?raw=true)
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
  
-Para mais informações, consulte o microfundamento "Modelagem de Dados".
+## Diagrama BPMN
+![BPMN](https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/doc/img/https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews/blob/main/doc/img/BPMN.jpg)
+
 
 ## Modelo Físico
 
