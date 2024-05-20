@@ -1,11 +1,12 @@
 import React from 'react';
+import { Linking, Text, TouchableOpacityProps } from 'react-native';
+
 import {
   NewsAuthor,
   NewsCardContainer,
   NewsItemContainer,
   NewsTitle,
 } from './styles';
-import { Linking, Text, TouchableOpacityProps } from 'react-native';
 
 type NewsCardProps = TouchableOpacityProps & {
   title: string;
