@@ -13,6 +13,27 @@
       "userId": 1,
       "createdAt": "2024-04-15T23:31:18.284Z",
       "id": 2
+    },
+    {
+      "title": "Embeddings are a good starting point for the AI curious app developer",
+      "url": "https://bawolf.substack.com/p/embeddings-are-a-good-starting-point",
+      "userId": 1,
+      "createdAt": "2024-04-17T22:22:29.292Z",
+      "id": 3
+    },
+    {
+      "title": "Apple introduces M4 chip",
+      "url": "https://www.apple.com/newsroom/2024/05/apple-introduces-m4-chip/",
+      "userId": 1,
+      "createdAt": "2024-05-07T23:33:42.819Z",
+      "id": 4
+    },
+    {
+      "title": "ADOBE PHOTOSHOP SOURCE CODE",
+      "url": "https://computerhistory.org/blog/adobe-photoshop-source-code/",
+      "userId": 1,
+      "createdAt": "2024-05-15T20:30:01.235Z",
+      "id": 5
     }
   ],
   "users": [
@@ -21,6 +42,18 @@
       "password": "$2a$10$yYTR8UJUPGwBrc.9RXzYC.vdIAc007mqipNsPdebpFhaNHooinfbq",
       "name": "Pedro Costa",
       "id": 1
+    },
+    {
+      "email": "pedrobc@exemplo.com",
+      "password": "$2a$10$jv/GQhQLXQ.tB7TURepsV.lWHetYjEgvo1v7C6Bd2csf/6Gjsey9e",
+      "name": "Pedro Batista",
+      "id": 2
+    },
+    {
+      "email": "teste@exemplo.com",
+      "password": "$2a$10$dCr2bVpc1GMfIDMzeBC4IuS5LdN/Cs0Z6uPmSLjo1gtYND3PnLtM.",
+      "name": "Pedro Teste",
+      "id": 3
     }
   ]
 }
