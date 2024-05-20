@@ -48,7 +48,7 @@ const SignUp = () => {
 
   return (
     <SignUpContainer>
-      <Header />
+      <Header showGoBackButton />
       <Router>
         <SignUpContent>
           <Input
