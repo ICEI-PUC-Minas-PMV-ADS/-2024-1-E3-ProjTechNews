@@ -1,11 +1,17 @@
-import React, { useCallback, useState, useEffect } from 'react';
+import React, { useCallback, useState } from 'react';
+import { Alert, FlatList } from 'react-native';
+import {
+  useFocusEffect,
+  useNavigation,
+  useRoute,
+} from '@react-navigation/native';
+
 import { Footer, HomeContainer } from './styles';
 import Header from '../../Header';
-import { Alert, FlatList } from 'react-native';
 import NewsCard from '../../NewsCard';
-import { useFocusEffect, useNavigation, useRoute } from '@react-navigation/native';
-import instance from '../../../lib/axios';
 import Button from '../../Button';
+
+import api from '../../../lib/axios';
 
 type User = {
   id: Number;
@@ -35,7 +41,9 @@ const Home = () => {
 
   const fetchNews = useCallback(async () => {
     try {
-      const { data } = await instance.get('/news');
+      const { data } = await api.get(
+        '/news/?_expand=user&_sort=createdAt&_order=desc'
+      );
 
       setNews(data);
     } catch (error) {
@@ -50,23 +58,19 @@ const Home = () => {
   );
 
   return (
-    <HomeContainer>
-      <Header />
+    <HomeContainer >
+      <Header showSignOutButton />
       <Button
         title="Adicionar Notícias"
         style={{ marginTop: 12 }}
         onPress={handleToAddNewsPage}
       />
-      
+
       <FlatList
         data={news}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
-          <NewsCard
-            title={item.title}
-            url={item.url}
-            author={item.user?.name}
-          />
+          <NewsCard title={item.title} url={item.url} author={item.user.name} />
         )}
       />
       <Footer>puc minas</Footer>
