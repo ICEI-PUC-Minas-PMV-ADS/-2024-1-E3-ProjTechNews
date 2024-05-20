@@ -1,14 +1,52 @@
 import React from 'react';
-import { HeaderContainer } from './styles';
 import Logo from '../Logo';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { useNavigation } from '@react-navigation/native';
 
-const Header = () => {
+import { useUser } from '../../contexts/userContext';
+
+import {
+  BackButton,
+  BackIcon,
+  HeaderContainer,
+  LogOutButton,
+  LogOutIcon,
+} from './styles';
+
+type HeaderProps = {
+  showGoBackButton?: boolean;
+  showSignOutButton?: boolean;
+};
+
+const Header = ({
+  showGoBackButton = false,
+  showSignOutButton = false,
+}: HeaderProps) => {
+  const { setSigned, setUserId } = useUser();
+
+  const navigation = useNavigation();
+
+  function handleLogOut() {
+    setSigned?.(false);
+    setUserId?.(0);
+  }
+
+  function handleGoBack() {
+    navigation.goBack();
+  }
+
   return (
     <HeaderContainer>
-      <Router>
-        <Logo />
-      </Router>
+      {showGoBackButton && (
+        <BackButton onPress={handleGoBack}>
+          <BackIcon />
+        </BackButton>
+      )}
+      {showSignOutButton && (
+        <LogOutButton onPress={handleLogOut}>
+          <LogOutIcon />
+        </LogOutButton>
+      )}
+      <Logo />
     </HeaderContainer>
   );
 };
