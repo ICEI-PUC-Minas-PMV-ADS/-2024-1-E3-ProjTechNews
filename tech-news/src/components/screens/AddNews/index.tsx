@@ -38,7 +38,7 @@ const AddNews = () => {
 
   return (
     <AddNewsContainer>
-      <Header />
+      <Header showGoBackButton />
       <Router>
         <AddNewsContent>
           <Input
