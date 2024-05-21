@@ -1,15 +1,15 @@
 import React from 'react';
 import Logo from '../Logo';
 import { useNavigation } from '@react-navigation/native';
-
 import { useUser } from '../../contexts/userContext';
-
 import {
   BackButton,
   BackIcon,
   HeaderContainer,
   LogOutButton,
   LogOutIcon,
+  UserNameButton,
+  UserNameText,
 } from './styles';
 
 type HeaderProps = {
@@ -21,8 +21,7 @@ const Header = ({
   showGoBackButton = false,
   showSignOutButton = false,
 }: HeaderProps) => {
-  const { setSigned, setUserId } = useUser();
-
+  const { signed, userId, setSigned, setUserId } = useUser();
   const navigation = useNavigation();
 
   function handleLogOut() {
@@ -32,6 +31,10 @@ const Header = ({
 
   function handleGoBack() {
     navigation.goBack();
+  }
+
+  function handleGoToUpdate() {
+    navigation.navigate('updateUser');
   }
 
   return (
@@ -47,6 +50,11 @@ const Header = ({
         </LogOutButton>
       )}
       <Logo />
+      {signed && (
+        <UserNameButton onPress={handleGoToUpdate}>
+          <UserNameText>Atualize seus dados</UserNameText>
+        </UserNameButton>
+      )}
     </HeaderContainer>
   );
 };
