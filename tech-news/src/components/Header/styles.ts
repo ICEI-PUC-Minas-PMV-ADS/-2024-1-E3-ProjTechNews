@@ -30,3 +30,15 @@ export const LogOutIcon = styled(XCircle).attrs(({ theme }) => ({
   size: 32,
   weight: 'bold',
 }))``;
+
+export const UserNameButton = styled.TouchableOpacity`
+  flex: 2;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const UserNameText = styled.Text`
+  color: ${({ theme }) => theme.COLORS.WHITE};
+  font-size: 16px;
+  font-weight: bold;
+`;
