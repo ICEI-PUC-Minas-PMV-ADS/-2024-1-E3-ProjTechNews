@@ -6,10 +6,11 @@ import {
   useRoute,
 } from '@react-navigation/native';
 
-import { Footer, HomeContainer } from './styles';
+import { HomeContainer } from './styles';
 import Header from '../../Header';
 import NewsCard from '../../NewsCard';
 import Button from '../../Button';
+import Loading from '../../Loading';
 
 import api from '../../../lib/axios';
 
@@ -29,6 +30,7 @@ type News = {
 
 const Home = () => {
   const [news, setNews] = useState<News[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const navigation = useNavigation();
   const route = useRoute();
@@ -48,6 +50,10 @@ const Home = () => {
       setNews(data);
     } catch (error) {
       Alert.alert('Erro ⚠', 'Não foi possível carregar as notícias.');
+    } finally {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 1000);
     }
   }, []);
 
@@ -58,22 +64,29 @@ const Home = () => {
   );
 
   return (
-    <HomeContainer >
+    <HomeContainer>
       <Header showSignOutButton />
       <Button
         title="Adicionar Notícias"
-        style={{ marginTop: 12 }}
+        style={{ marginTop: 12, marginBottom: 12, width: '100%' }}
         onPress={handleToAddNewsPage}
       />
 
-      <FlatList
-        data={news}
-        keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => (
-          <NewsCard title={item.title} url={item.url} author={item.user.name} />
-        )}
-      />
-      <Footer>puc minas</Footer>
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <FlatList
+          data={news}
+          keyExtractor={(item) => item.id.toString()}
+          renderItem={({ item }) => (
+            <NewsCard
+              title={item.title}
+              url={item.url}
+              author={item.user.name}
+            />
+          )}
+        />
+      )}
     </HomeContainer>
   );
 };

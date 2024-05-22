@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { useNavigation, useRoute } from '@react-navigation/native';
 import { LoginContainer, LoginContent } from './styles';
+
+import { Alert } from 'react-native';
+
 import Header from '../../Header';
 import Button from '../../Button';
 import Input from '../../Input';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { useNavigation, useRoute } from '@react-navigation/native';
+
 import { useUser } from '../../../contexts/userContext';
+
 import api from '../../../lib/axios';
-import { Alert } from 'react-native';
 
 const Login = () => {
   const [email, setEmail] = useState('pedro@exemplo.com');

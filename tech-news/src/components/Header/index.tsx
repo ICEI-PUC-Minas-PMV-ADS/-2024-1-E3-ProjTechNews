@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import Logo from '../Logo';
-import { useNavigation } from '@react-navigation/native';
+import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { useUser } from '../../contexts/userContext';
 import {
   BackButton,
@@ -11,16 +11,25 @@ import {
   UserNameButton,
   UserNameText,
 } from './styles';
+import { Alert } from 'react-native';
+import api from '../../lib/axios';
 
 type HeaderProps = {
   showGoBackButton?: boolean;
   showSignOutButton?: boolean;
 };
 
+type User = {
+  id: Number;
+  name: string;
+  email: string;
+};
+
 const Header = ({
   showGoBackButton = false,
   showSignOutButton = false,
 }: HeaderProps) => {
+  const [user, setUser] = useState<User>();
   const { signed, userId, setSigned, setUserId } = useUser();
   const navigation = useNavigation();
 
@@ -36,6 +45,28 @@ const Header = ({
   function handleGoToUpdate() {
     navigation.navigate('updateUser');
   }
+
+  const fetchUser = useCallback(async () => {
+    try {
+      if (signed) {
+        const response = await api.get(`/users/${userId}`);
+        const userData = response.data;
+
+        setUser(userData);
+      }
+    } catch (error) {
+      console.error('Error fetching user data:', error);
+      Alert.alert('Erro ⚠', 'Falha ao carregar dados do usuário.');
+    }
+  }, []);
+
+  useFocusEffect(
+    useCallback(() => {
+      fetchUser();
+    }, [fetchUser])
+  );
+
+  console.log(user, 'user');
 
   return (
     <HeaderContainer>

@@ -39,8 +39,8 @@
   "users": [
     {
       "email": "pedro@exemplo.com",
-      "password": "$2a$10$yYTR8UJUPGwBrc.9RXzYC.vdIAc007mqipNsPdebpFhaNHooinfbq",
       "name": "Pedro Costa",
+      "password": "$2a$10$hGVmB3GG2bxe2SY5XXMj8Od6XSFWUnZAOv4FAsbCs.RdAdFvprss2",
       "id": 1
     },
     {

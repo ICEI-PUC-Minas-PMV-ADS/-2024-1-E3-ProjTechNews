@@ -6,7 +6,7 @@ import Input from '../../Input';
 import Button from '../../Button';
 import { useNavigation } from '@react-navigation/native';
 import { Alert } from 'react-native';
-import instance from '../../../lib/axios';
+import api from '../../../lib/axios';
 import { UserContext } from '../../../contexts/userContext';
 
 const SignUp = () => {
@@ -25,7 +25,7 @@ const SignUp = () => {
     }
 
     try {
-      const response = await instance.post('/users', {
+      const response = await api.post('/users', {
         email,
         password,
         name,

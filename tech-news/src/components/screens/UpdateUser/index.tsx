@@ -1,25 +1,28 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { UpdateUserContainer, UpdateUserContent } from './styles';
-import Header from '../../Header';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Input from '../../Input';
-import Button from '../../Button';
+
 import { useNavigation } from '@react-navigation/native';
 import { Alert } from 'react-native';
-import api from '../../../lib/axios';
+
+import Header from '../../Header';
+import Input from '../../Input';
+import Button from '../../Button';
+
+import { UpdateUserContainer, UpdateUserContent } from './styles';
+
 import { UserContext } from '../../../contexts/userContext';
+
+import api from '../../../lib/axios';
 
 const UpdateUser = () => {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
   const [confirmation, setConfirmation] = useState('');
-  const { userId } = useContext(UserContext);
+  const { userId, setSigned, setUserId } = useContext(UserContext);
 
   const navigation = useNavigation();
 
   useEffect(() => {
-    // Fetch the current user data when the component mounts
     const fetchUserData = async () => {
       try {
         const response = await api.get(`/users/${userId}`);
@@ -45,16 +48,14 @@ const UpdateUser = () => {
     const updatedUserData = {
       email,
       name,
-      ...(password && { password }), // Only include password if it's provided
+      ...(password && { password }),
     };
 
     try {
-      // console.log('Updating user with data:', updatedUserData);
-
       await api.put(`/users/${userId}`, updatedUserData);
 
       Alert.alert('Sucesso! 👍', 'Usuário atualizado com sucesso!');
-      navigation.navigate('home'); // Navigate to the profile page or any other page
+      navigation.navigate('home');
     } catch (error) {
       console.error(
         'Error updating user:',
@@ -64,41 +65,64 @@ const UpdateUser = () => {
     }
   };
 
+  const handleDeleteUser = async () => {
+    try {
+      await api.delete(`/users/${userId}`);
+
+      Alert.alert('Sucesso! 👍', 'Usuário deletado com sucesso!');
+
+      setSigned(false);
+      setUserId(0);
+
+      navigation.navigate('login');
+    } catch (error) {
+      console.error(
+        'Error deleting user:',
+        error.response ? error.response.data : error.message
+      );
+      Alert.alert('Erro ⚠', 'Falha ao deletar usuário.');
+    }
+  };
+
   return (
     <UpdateUserContainer>
       <Header showGoBackButton />
-      <Router>
-        <UpdateUserContent>
-          <Input
-            placeholder="Digite seu nome"
-            value={name}
-            onChangeText={setName}
-          />
-          <Input
-            placeholder="Digite seu e-mail"
-            value={email}
-            onChangeText={setEmail}
-          />
-          <Input
-            placeholder="Digite sua senha atual ou nova"
-            value={password}
-            onChangeText={setPassword}
-            secureTextEntry
-          />
-          <Input
-            placeholder="Confirme sua senha atual ou nova"
-            value={confirmation}
-            onChangeText={setConfirmation}
-            secureTextEntry
-          />
+      <UpdateUserContent>
+        <Input
+          placeholder="Digite seu nome"
+          value={name}
+          onChangeText={setName}
+        />
+        <Input
+          placeholder="Digite seu e-mail"
+          value={email}
+          onChangeText={setEmail}
+        />
+        <Input
+          placeholder="Digite sua senha atual ou nova"
+          value={password}
+          onChangeText={setPassword}
+          secureTextEntry
+        />
+        <Input
+          placeholder="Confirme sua senha atual ou nova"
+          value={confirmation}
+          onChangeText={setConfirmation}
+          secureTextEntry
+        />
 
-          <Button
-            title="Atualizar"
-            style={{ marginTop: 12 }}
-            onPress={handleUpdateUser}
-          />
-        </UpdateUserContent>
-      </Router>
+        <Button
+          title="Atualizar"
+          style={{ marginTop: 12 }}
+          onPress={handleUpdateUser}
+        />
+
+        <Button
+          title="Deletar Usuário"
+          style={{ marginTop: 12 }}
+          onPress={handleDeleteUser}
+        />
+      </UpdateUserContent>
     </UpdateUserContainer>
   );
 };

@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
+import { useUser } from '../../../contexts/userContext';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 import Button from '../../Button';
 import Input from '../../Input';
-import { AddNewsContainer, AddNewsContent } from './styles';
 import Header from '../../Header';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { useUser } from '../../../contexts/userContext';
 import { useNavigation } from '@react-navigation/native';
-import instance from '../../../lib/axios';
 import { Alert } from 'react-native';
+
+import { AddNewsContainer, AddNewsContent } from './styles';
+
+import instance from '../../../lib/axios';
 
 const AddNews = () => {
   const [title, setTitle] = useState('');

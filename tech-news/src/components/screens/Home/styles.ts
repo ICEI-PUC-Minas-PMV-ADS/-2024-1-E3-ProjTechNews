@@ -6,8 +6,3 @@ export const HomeContainer = styled(SafeAreaView)`
   background-color: ${({ theme }) => theme.COLORS.GRAY_600};
   padding: 24px;
 `;
-
-export const Footer = styled.Text`
-  font-size: 16px;
-  color: ${({ theme }) => theme.COLORS.WHITE};
-`;
