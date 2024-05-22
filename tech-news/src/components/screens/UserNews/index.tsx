@@ -70,7 +70,7 @@ const UserNews = () => {
     } finally {
       setTimeout(() => {
         setIsLoading(false);
-      }, 1000);
+      }, 800);
     }
   }, [userId]);
 

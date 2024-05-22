@@ -53,7 +53,7 @@ const Home = () => {
     } finally {
       setTimeout(() => {
         setIsLoading(false);
-      }, 1000);
+      }, 800);
     }
   }, []);
 
