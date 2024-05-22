@@ -6,6 +6,8 @@ export declare global {
       home: undefined;
       addNews: undefined;
       updateUser: undefined;
+      userNews: undefined;
+      updateNews: { newsId: number };
     }
   }
 }

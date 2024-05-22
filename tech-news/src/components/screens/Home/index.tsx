@@ -82,7 +82,7 @@ const Home = () => {
             <NewsCard
               title={item.title}
               url={item.url}
-              author={item.user.name}
+              author={item.user?.name || 'Desconhecido'}
             />
           )}
         />

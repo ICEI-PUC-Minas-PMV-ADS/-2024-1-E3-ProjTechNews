@@ -29,13 +29,6 @@
       "id": 4
     },
     {
-      "title": "ADOBE PHOTOSHOP SOURCE CODE",
-      "url": "https://computerhistory.org/blog/adobe-photoshop-source-code/",
-      "userId": 1,
-      "createdAt": "2024-05-15T20:30:01.235Z",
-      "id": 5
-    },
-    {
       "title": "Why physicists now question the fate of the Universe",
       "url": "https://bigthink.com/starts-with-a-bang/physicists-question-fate-universe/",
       "userId": 2,
@@ -47,7 +40,7 @@
     {
       "email": "pedro@exemplo.com",
       "name": "Pedro Costa",
-      "password": "$2a$10$tOeWr1CyxMeKBTwDEqWaquNSKUAkDbewjecqOKe0dsjmG9WeW5qFS",
+      "password": "$2a$10$h6OafluDGCYDG08FH3GqPuZBEhsyYn0TNl/0SYMt6EnrJ71dUvKCG",
       "id": 1
     },
     {

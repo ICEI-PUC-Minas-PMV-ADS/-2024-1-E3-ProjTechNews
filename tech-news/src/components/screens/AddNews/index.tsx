@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { useUser } from '../../../contexts/userContext';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Alert } from 'react-native';
 
 import Button from '../../Button';
 import Input from '../../Input';
 import Header from '../../Header';
 import { useNavigation } from '@react-navigation/native';
-import { Alert } from 'react-native';
 
 import { AddNewsContainer, AddNewsContent } from './styles';
+
+import { useUser } from '../../../contexts/userContext';
 
 import instance from '../../../lib/axios';
 
@@ -42,7 +42,6 @@ const AddNews = () => {
   return (
     <AddNewsContainer>
       <Header showGoBackButton />
-      <Router>
         <AddNewsContent>
           <Input
             placeholder="Digite o nome da notícia"
@@ -61,7 +60,6 @@ const AddNews = () => {
             onPress={handleAddNews}
           />
         </AddNewsContent>
-      </Router>
     </AddNewsContainer>
   );
 };

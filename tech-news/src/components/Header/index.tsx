@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react';
-import Logo from '../Logo';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
-import { useUser } from '../../contexts/userContext';
+import { Alert } from 'react-native';
+
 import {
   BackButton,
   BackIcon,
@@ -11,7 +11,10 @@ import {
   UserNameButton,
   UserNameText,
 } from './styles';
-import { Alert } from 'react-native';
+import Logo from '../Logo';
+
+import { useUser } from '../../contexts/userContext';
+
 import api from '../../lib/axios';
 
 type HeaderProps = {
@@ -43,7 +46,7 @@ const Header = ({
   }
 
   function handleGoToUpdate() {
-    navigation.navigate('updateUser');
+    navigation.navigate('userNews');
   }
 
   const fetchUser = useCallback(async () => {
@@ -81,7 +84,7 @@ const Header = ({
       <Logo />
       {signed && user && (
         <UserNameButton onPress={handleGoToUpdate}>
-          <UserNameText>Olá {user.name}</UserNameText>
+          <UserNameText>Olá, {user.name}</UserNameText>
         </UserNameButton>
       )}
     </HeaderContainer>
