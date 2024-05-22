@@ -39,27 +39,38 @@ const AddNews = () => {
     }
   };
 
+  const handleToUserNews = () => {
+    navigation.navigate('userNews');
+  };
+
   return (
     <AddNewsContainer>
       <Header showGoBackButton />
-        <AddNewsContent>
-          <Input
-            placeholder="Digite o nome da notícia"
-            value={title}
-            onChangeText={setTitle}
-          />
-          <Input
-            placeholder="Digite o link da notícia"
-            value={url}
-            onChangeText={setUrl}
-          />
+      <AddNewsContent>
+        <Input
+          placeholder="Digite o nome da notícia"
+          value={title}
+          onChangeText={setTitle}
+        />
+        <Input
+          placeholder="Digite o link da notícia"
+          value={url}
+          onChangeText={setUrl}
+        />
 
-          <Button
-            title="Adicionar"
-            style={{ marginTop: 12 }}
-            onPress={handleAddNews}
-          />
-        </AddNewsContent>
+        <Button
+          title="Adicionar"
+          style={{ marginTop: 12 }}
+          onPress={handleAddNews}
+        />
+
+        <Button
+          title="Suas Notícias"
+          style={{ marginTop: 12 }}
+          onPress={handleToUserNews}
+          type="SECONDARY"
+        />
+      </AddNewsContent>
     </AddNewsContainer>
   );
 };

@@ -46,7 +46,7 @@ const Header = ({
   }
 
   function handleGoToUpdate() {
-    navigation.navigate('userNews');
+    navigation.navigate('updateUser');
   }
 
   const fetchUser = useCallback(async () => {
