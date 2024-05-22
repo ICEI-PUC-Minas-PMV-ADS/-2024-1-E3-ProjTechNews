@@ -39,6 +39,6 @@ export const UserNameButton = styled.TouchableOpacity`
 
 export const UserNameText = styled.Text`
   color: ${({ theme }) => theme.COLORS.WHITE};
-  font-size: 16px;
+  font-size: ${({ theme }) => theme.FONT_SIZE.SM};
   font-weight: bold;
 `;

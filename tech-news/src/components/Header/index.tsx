@@ -20,7 +20,7 @@ type HeaderProps = {
 };
 
 type User = {
-  id: Number;
+  id: number;
   name: string;
   email: string;
 };
@@ -29,7 +29,7 @@ const Header = ({
   showGoBackButton = false,
   showSignOutButton = false,
 }: HeaderProps) => {
-  const [user, setUser] = useState<User>();
+  const [user, setUser] = useState<User | null>(null);
   const { signed, userId, setSigned, setUserId } = useUser();
   const navigation = useNavigation();
 
@@ -58,15 +58,13 @@ const Header = ({
       console.error('Error fetching user data:', error);
       Alert.alert('Erro ⚠', 'Falha ao carregar dados do usuário.');
     }
-  }, []);
+  }, [signed, userId]);
 
   useFocusEffect(
     useCallback(() => {
       fetchUser();
     }, [fetchUser])
   );
-
-  console.log(user, 'user');
 
   return (
     <HeaderContainer>
@@ -81,9 +79,9 @@ const Header = ({
         </LogOutButton>
       )}
       <Logo />
-      {signed && (
+      {signed && user && (
         <UserNameButton onPress={handleGoToUpdate}>
-          <UserNameText>Atualize seus dados</UserNameText>
+          <UserNameText>Olá {user.name}</UserNameText>
         </UserNameButton>
       )}
     </HeaderContainer>

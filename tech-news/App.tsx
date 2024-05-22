@@ -12,6 +12,7 @@ import themes from './src/themes';
 
 import Routes from './src/routes';
 import UserProvider from './src/contexts/userContext';
+import Loading from './src/components/Loading';
 
 const App = () => {
   const [fontsLoaded] = useFonts({
@@ -27,7 +28,7 @@ const App = () => {
           backgroundColor="transparent"
           translucent
         />
-        <Routes />
+        {fontsLoaded ? <Routes /> : <Loading />}
       </UserProvider>
     </ThemeProvider>
   );
