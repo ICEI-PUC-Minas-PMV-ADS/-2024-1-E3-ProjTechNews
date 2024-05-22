@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { LoginContainer, LoginContent } from './styles';
 
@@ -46,34 +45,28 @@ const Login = () => {
   return (
     <LoginContainer>
       <Header />
-      <Router>
-        <LoginContent>
-          <Input
-            placeholder="Digite seu e-mail"
-            value={email}
-            onChangeText={setEmail}
-          />
-          <Input
-            placeholder="Digite sua senha"
-            value={password}
-            onChangeText={setPassword}
-            secureTextEntry
-          />
+      <LoginContent>
+        <Input
+          placeholder="Digite seu e-mail"
+          value={email}
+          onChangeText={setEmail}
+        />
+        <Input
+          placeholder="Digite sua senha"
+          value={password}
+          onChangeText={setPassword}
+          secureTextEntry
+        />
 
-          <Button
-            title="Login"
-            style={{ marginTop: 12 }}
-            onPress={handleLogin}
-          />
+        <Button title="Login" style={{ marginTop: 12 }} onPress={handleLogin} />
 
-          <Button
-            title="Cadastrar"
-            style={{ marginTop: 12 }}
-            type="SECONDARY"
-            onPress={handleToSignUpPage}
-          />
-        </LoginContent>
-      </Router>
+        <Button
+          title="Cadastrar"
+          style={{ marginTop: 12 }}
+          type="SECONDARY"
+          onPress={handleToSignUpPage}
+        />
+      </LoginContent>
     </LoginContainer>
   );
 };

@@ -54,6 +54,12 @@
       "password": "$2a$10$dCr2bVpc1GMfIDMzeBC4IuS5LdN/Cs0Z6uPmSLjo1gtYND3PnLtM.",
       "name": "Pedro Teste",
       "id": 3
+    },
+    {
+      "email": "teste2@exemplo.com",
+      "name": "Teste Teste 15",
+      "password": "$2a$10$H419Y1M27BAG99mnylc3J.AYES9juLAxBNDttdrSugsHRPxsvuBqa",
+      "id": 4
     }
   ]
 }

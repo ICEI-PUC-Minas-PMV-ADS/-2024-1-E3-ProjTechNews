@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useContext } from 'react';
-
 import { useNavigation } from '@react-navigation/native';
 import { Alert } from 'react-native';
 

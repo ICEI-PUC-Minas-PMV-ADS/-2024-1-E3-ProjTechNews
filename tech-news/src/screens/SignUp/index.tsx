@@ -2,8 +2,6 @@ import React, { useState, useContext } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { Alert } from 'react-native';
 
-import { BrowserRouter as Router } from 'react-router-dom';
-
 import Header from '../../components/Header';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
@@ -53,38 +51,36 @@ const SignUp = () => {
   return (
     <SignUpContainer>
       <Header showGoBackButton />
-      <Router>
-        <SignUpContent>
-          <Input
-            placeholder="Digite seu nome"
-            value={name}
-            onChangeText={setName}
-          />
-          <Input
-            placeholder="Digite seu e-mail"
-            value={email}
-            onChangeText={setEmail}
-          />
-          <Input
-            placeholder="Digite sua senha"
-            value={password}
-            onChangeText={setPassword}
-            secureTextEntry
-          />
-          <Input
-            placeholder="Confirme sua senha"
-            value={confirmation}
-            onChangeText={setConfirmation}
-            secureTextEntry
-          />
+      <SignUpContent>
+        <Input
+          placeholder="Digite seu nome"
+          value={name}
+          onChangeText={setName}
+        />
+        <Input
+          placeholder="Digite seu e-mail"
+          value={email}
+          onChangeText={setEmail}
+        />
+        <Input
+          placeholder="Digite sua senha"
+          value={password}
+          onChangeText={setPassword}
+          secureTextEntry
+        />
+        <Input
+          placeholder="Confirme sua senha"
+          value={confirmation}
+          onChangeText={setConfirmation}
+          secureTextEntry
+        />
 
-          <Button
-            title="Cadastrar"
-            style={{ marginTop: 12 }}
-            onPress={handleSignUp}
-          />
-        </SignUpContent>
-      </Router>
+        <Button
+          title="Cadastrar"
+          style={{ marginTop: 12 }}
+          onPress={handleSignUp}
+        />
+      </SignUpContent>
     </SignUpContainer>
   );
 };
