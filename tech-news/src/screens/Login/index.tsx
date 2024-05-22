@@ -5,13 +5,13 @@ import { LoginContainer, LoginContent } from './styles';
 
 import { Alert } from 'react-native';
 
-import Header from '../../Header';
-import Button from '../../Button';
-import Input from '../../Input';
+import Header from '../../components/Header';
+import Button from '../../components/Button';
+import Input from '../../components/Input';
 
-import { useUser } from '../../../contexts/userContext';
+import { useUser } from '../../contexts/userContext';
 
-import api from '../../../lib/axios';
+import api from '../../lib/axios';
 
 const Login = () => {
   const [email, setEmail] = useState('pedro@exemplo.com');

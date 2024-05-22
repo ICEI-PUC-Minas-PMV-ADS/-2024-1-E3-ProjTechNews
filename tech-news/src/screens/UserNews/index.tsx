@@ -3,14 +3,15 @@ import { Alert, FlatList, View, Button as RNButton } from 'react-native';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
 
 import { EditButton, EditIcon, UserNewsContainer } from './styles';
-import Header from '../../Header';
-import NewsCard from '../../NewsCard';
-import Button from '../../Button';
-import Loading from '../../Loading';
+import Header from '../../components/Header';
+import NewsCard from '../../components/NewsCard';
+import Button from '../../components/Button';
+import Loading from '../../components/Loading';
 
-import { useUser } from '../../../contexts/userContext';
+import { useUser } from '../../contexts/userContext';
 
-import api from '../../../lib/axios';
+import api from '../../lib/axios';
+import { ListEmpty } from '../../components/EmptyNews';
 
 type User = {
   id: number;
@@ -118,9 +119,15 @@ const UserNews = () => {
                 color="#AA2834"
               />
               <EditButton onPress={() => handleEditNews(item.id)}>
-                <EditIcon /> 
+                <EditIcon />
               </EditButton>
             </View>
+          )}
+          contentContainerStyle={
+            (news === undefined || news.length === 0) && { flex: 1 }
+          }
+          ListEmptyComponent={() => (
+            <ListEmpty message="Cadastre sua primeira notícia" />
           )}
         />
       )}

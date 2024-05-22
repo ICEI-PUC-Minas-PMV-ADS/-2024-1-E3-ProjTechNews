@@ -1,13 +1,13 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Home from '../components/screens/Home';
-import Login from '../components/screens/Login';
-import SignUp from '../components/screens/SignUp';
-import AddNews from '../components/screens/AddNews';
-import UpdateUser from '../components/screens/UpdateUser';
-import UserNews from '../components/screens/UserNews';
-import UpdateNews from '../components/screens/UpdateNews';
+import Home from '../screens/Home';
+import Login from '../screens/Login';
+import SignUp from '../screens/SignUp';
+import AddNews from '../screens/AddNews';
+import UpdateUser from '../screens/UpdateUser';
+import UserNews from '../screens/UserNews';
+import UpdateNews from '../screens/UpdateNews';
 
 import { useUser } from '../contexts/userContext';
 

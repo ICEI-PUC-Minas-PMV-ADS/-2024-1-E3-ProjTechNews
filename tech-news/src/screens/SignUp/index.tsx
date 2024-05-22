@@ -1,13 +1,17 @@
 import React, { useState, useContext } from 'react';
-import { SignUpContainer, SignUpContent } from './styles';
-import Header from '../../Header';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Input from '../../Input';
-import Button from '../../Button';
 import { useNavigation } from '@react-navigation/native';
 import { Alert } from 'react-native';
-import api from '../../../lib/axios';
-import { UserContext } from '../../../contexts/userContext';
+
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import Header from '../../components/Header';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
+import { SignUpContainer, SignUpContent } from './styles';
+
+import { UserContext } from '../../contexts/userContext';
+
+import api from '../../lib/axios';
 
 const SignUp = () => {
   const [email, setEmail] = useState('');

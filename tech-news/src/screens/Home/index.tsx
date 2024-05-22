@@ -7,12 +7,12 @@ import {
 } from '@react-navigation/native';
 
 import { HomeContainer } from './styles';
-import Header from '../../Header';
-import NewsCard from '../../NewsCard';
-import Button from '../../Button';
-import Loading from '../../Loading';
+import Header from '../../components/Header';
+import NewsCard from '../../components/NewsCard';
+import Button from '../../components/Button';
+import Loading from '../../components/Loading';
 
-import api from '../../../lib/axios';
+import api from '../../lib/axios';
 
 type User = {
   id: Number;

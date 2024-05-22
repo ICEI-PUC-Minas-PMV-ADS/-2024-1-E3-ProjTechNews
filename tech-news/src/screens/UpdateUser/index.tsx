@@ -3,15 +3,15 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { Alert } from 'react-native';
 
-import Header from '../../Header';
-import Input from '../../Input';
-import Button from '../../Button';
+import Header from '../../components/Header';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
 
 import { UpdateUserContainer, UpdateUserContent } from './styles';
 
-import { UserContext } from '../../../contexts/userContext';
+import { UserContext } from '../../contexts/userContext';
 
-import api from '../../../lib/axios';
+import api from '../../lib/axios';
 
 const UpdateUser = () => {
   const [email, setEmail] = useState('');
@@ -121,6 +121,7 @@ const UpdateUser = () => {
           title="Deletar Usuário"
           style={{ marginTop: 12 }}
           onPress={handleDeleteUser}
+          type="SECONDARY"
         />
       </UpdateUserContent>
     </UpdateUserContainer>

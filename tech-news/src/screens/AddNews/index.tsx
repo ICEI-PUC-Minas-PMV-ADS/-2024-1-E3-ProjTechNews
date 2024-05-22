@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { Alert } from 'react-native';
 
-import Button from '../../Button';
-import Input from '../../Input';
-import Header from '../../Header';
+import Button from '../../components/Button';
+import Input from '../../components/Input';
+import Header from '../../components/Header';
 import { useNavigation } from '@react-navigation/native';
 
 import { AddNewsContainer, AddNewsContent } from './styles';
 
-import { useUser } from '../../../contexts/userContext';
+import { useUser } from '../../contexts/userContext';
 
-import instance from '../../../lib/axios';
+import instance from '../../lib/axios';
 
 const AddNews = () => {
   const [title, setTitle] = useState('');

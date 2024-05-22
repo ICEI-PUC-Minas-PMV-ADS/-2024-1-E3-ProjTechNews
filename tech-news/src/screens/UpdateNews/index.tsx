@@ -3,13 +3,13 @@ import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { Alert } from 'react-native';
 
 import { UpdateNewsContainer, UpdateNewsContent } from './styles';
-import Header from '../../Header';
-import Input from '../../Input';
-import Button from '../../Button';
+import Header from '../../components/Header';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
 
-import { UserContext } from '../../../contexts/userContext';
+import { UserContext } from '../../contexts/userContext';
 
-import api from '../../../lib/axios';
+import api from '../../lib/axios';
 
 type RootStackParamList = {
   updateNews: { newsId: number };
