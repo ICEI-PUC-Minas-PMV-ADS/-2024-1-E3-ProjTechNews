@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 
 export const HeaderContainer = styled.View`
   width: 100%;
-  height: 5rem;
+  height: 6rem;
 
   display: flex;
   flex-direction: row;

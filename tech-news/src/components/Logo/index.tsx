@@ -1,5 +1,5 @@
 import React from 'react';
-import { LogoButton, LogoContainer, LogoText } from './styles';
+import { LogoButton, LogoContainer, LogoImage } from './styles';
 import { useNavigation, useRoute } from '@react-navigation/native';
 
 const Logo = () => {
@@ -15,7 +15,7 @@ const Logo = () => {
   return (
     <LogoContainer>
       <LogoButton onPress={handleToHome}>
-        <LogoText>Tech News</LogoText>
+        <LogoImage source={'assets/logo.jpeg'} />
       </LogoButton>
     </LogoContainer>
   );

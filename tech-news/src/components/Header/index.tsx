@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
-import { Alert } from 'react-native';
+
+import { showMessage } from 'react-native-flash-message';
 
 import {
   BackButton,
@@ -58,8 +59,12 @@ const Header = ({
         setUser(userData);
       }
     } catch (error) {
-      console.error('Error fetching user data:', error);
-      Alert.alert('Erro ⚠', 'Falha ao carregar dados do usuário.');
+      // console.error('Erro dados do usuário:', error); //debug
+      showMessage({
+        message: 'Erro ⚠',
+        description: 'Falha ao carregar dados do usuário.',
+        type: 'danger',
+      });
     }
   }, [signed, userId]);
 
