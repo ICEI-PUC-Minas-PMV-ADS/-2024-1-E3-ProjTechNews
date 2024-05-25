@@ -1,12 +1,23 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { Alert } from 'react-native';
+import { Text } from 'react-native';
+import Modal from 'react-native-modal';
+
+import FlashMessage, { showMessage } from 'react-native-flash-message';
 
 import Header from '../../components/Header';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
-import { UpdateUserContainer, UpdateUserContent } from './styles';
+import {
+  UpdateUserContainer,
+  UpdateUserContent,
+  ModalContent,
+  ModalText,
+  ButtonContainer,
+  CancelButton,
+  DeleteButton,
+} from './styles';
 
 import { UserContext } from '../../contexts/userContext';
 
@@ -19,6 +30,8 @@ const UpdateUser = () => {
   const [confirmation, setConfirmation] = useState('');
   const { userId, setSigned, setUserId } = useContext(UserContext);
 
+  const [isDeleteModalVisible, setDeleteModalVisible] = useState(false);
+
   const navigation = useNavigation();
 
   useEffect(() => {
@@ -30,8 +43,11 @@ const UpdateUser = () => {
         setEmail(userData.email);
         setName(userData.name);
       } catch (error) {
-        console.error('Error fetching user data:', error);
-        Alert.alert('Erro ⚠', 'Falha ao carregar dados do usuário.');
+        showMessage({
+          message: 'Erro ⚠',
+          description: 'Falha ao carregar dados do usuário.',
+          type: 'danger',
+        });
       }
     };
 
@@ -40,7 +56,11 @@ const UpdateUser = () => {
 
   const handleUpdateUser = async () => {
     if (password && confirmation !== password) {
-      Alert.alert('Erro ⚠', 'As senhas não coincidem.');
+      showMessage({
+        message: 'Erro ⚠',
+        description: 'As senhas não coincidem.',
+        type: 'danger',
+      });
       return;
     }
 
@@ -52,34 +72,48 @@ const UpdateUser = () => {
 
     try {
       await api.put(`/users/${userId}`, updatedUserData);
-
-      Alert.alert('Sucesso! 👍', 'Usuário atualizado com sucesso!');
+      showMessage({
+        message: 'Sucesso! 👍',
+        description: 'Usuário atualizado com sucesso!',
+        type: 'success',
+      });
       navigation.navigate('home');
     } catch (error) {
-      console.error(
-        'Error updating user:',
-        error.response ? error.response.data : error.message
-      );
-      Alert.alert('Erro ⚠', 'Falha ao atualizar usuário.');
+      showMessage({
+        message: 'Erro ⚠',
+        description:
+          'Falha ao atualizar usuário. Digite sua senha atual ou uma nova senha.',
+        type: 'danger',
+      });
     }
   };
 
+  const confirmDeleteUser = () => {
+    setDeleteModalVisible(true);
+  };
+
   const handleDeleteUser = async () => {
+    setDeleteModalVisible(false);
+
     try {
       await api.delete(`/users/${userId}`);
 
-      Alert.alert('Sucesso! 👍', 'Usuário deletado com sucesso!');
+      showMessage({
+        message: 'Sucesso! 👍',
+        description: 'Usuário deletado com sucesso!',
+        type: 'success',
+      });
 
       setSigned(false);
       setUserId(0);
 
       navigation.navigate('login');
     } catch (error) {
-      console.error(
-        'Error deleting user:',
-        error.response ? error.response.data : error.message
-      );
-      Alert.alert('Erro ⚠', 'Falha ao deletar usuário.');
+      showMessage({
+        message: 'Erro ⚠',
+        description: 'Falha ao deletar usuário.',
+        type: 'danger',
+      });
     }
   };
 
@@ -98,13 +132,13 @@ const UpdateUser = () => {
           onChangeText={setEmail}
         />
         <Input
-          placeholder="Digite sua senha atual ou nova"
+          placeholder="Digite sua senha"
           value={password}
           onChangeText={setPassword}
           secureTextEntry
         />
         <Input
-          placeholder="Confirme sua senha atual ou nova"
+          placeholder="Confirme sua senha"
           value={confirmation}
           onChangeText={setConfirmation}
           secureTextEntry
@@ -119,10 +153,27 @@ const UpdateUser = () => {
         <Button
           title="Deletar Usuário"
           style={{ marginTop: 12 }}
-          onPress={handleDeleteUser}
+          onPress={confirmDeleteUser}
           type="SECONDARY"
         />
       </UpdateUserContent>
+      <FlashMessage position="top" />
+      <Modal isVisible={isDeleteModalVisible}>
+        <ModalContent>
+          <ModalText>
+            Você tem certeza que deseja deletar o usuário? Esta ação não pode
+            ser desfeita.
+          </ModalText>
+          <ButtonContainer>
+            <CancelButton onPress={() => setDeleteModalVisible(false)}>
+              <Text>Cancelar</Text>
+            </CancelButton>
+            <DeleteButton onPress={handleDeleteUser}>
+              <Text style={{ color: 'white' }}>Deletar</Text>
+            </DeleteButton>
+          </ButtonContainer>
+        </ModalContent>
+      </Modal>
     </UpdateUserContainer>
   );
 };

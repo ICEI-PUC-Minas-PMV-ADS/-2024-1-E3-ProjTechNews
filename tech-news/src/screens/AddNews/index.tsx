@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Alert } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+
+import { showMessage } from 'react-native-flash-message';
 
 import Button from '../../components/Button';
 import Input from '../../components/Input';
 import Header from '../../components/Header';
-import { useNavigation } from '@react-navigation/native';
 
 import { AddNewsContainer, AddNewsContent } from './styles';
 
@@ -31,9 +32,17 @@ const AddNews = () => {
 
       setTitle('');
       setUrl('');
-      Alert.alert('Sucesso! 👍', 'Notícia adicionada com sucesso!');
+      showMessage({
+        message: 'Sucesso! 👍',
+        description: 'Notícia adicionada com sucesso!',
+        type: 'success',
+      });
     } catch (error) {
-      Alert.alert('Erro ⚠', 'Falha ao cadastrar notícia.');
+      showMessage({
+        message: 'Erro ⚠',
+        description: 'Falha ao cadastrar notícia.',
+        type: 'danger',
+      });
     } finally {
       navigation.navigate('home');
     }

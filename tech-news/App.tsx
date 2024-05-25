@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar, View } from 'react-native';
+import { StatusBar } from 'react-native';
 import {
   useFonts,
   Roboto_400Regular,
@@ -8,11 +8,14 @@ import {
 
 import { ThemeProvider } from 'styled-components/native';
 
+import FlashMessage from 'react-native-flash-message';
+
 import themes from './src/themes';
 
 import Routes from './src/routes';
-import UserProvider from './src/contexts/userContext';
 import Loading from './src/components/Loading';
+
+import UserProvider from './src/contexts/userContext';
 
 const App = () => {
   const [fontsLoaded] = useFonts({
@@ -29,6 +32,7 @@ const App = () => {
           translucent
         />
         {fontsLoaded ? <Routes /> : <Loading />}
+        <FlashMessage position="top" />
       </UserProvider>
     </ThemeProvider>
   );

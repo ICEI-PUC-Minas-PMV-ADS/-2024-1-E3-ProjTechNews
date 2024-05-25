@@ -1,5 +1,5 @@
-import { CaretLeft, XCircle } from '@phosphor-icons/react';
 import styled from 'styled-components/native';
+import { CaretLeft, XCircle } from '@phosphor-icons/react';
 
 export const HeaderContainer = styled.View`
   width: 100%;

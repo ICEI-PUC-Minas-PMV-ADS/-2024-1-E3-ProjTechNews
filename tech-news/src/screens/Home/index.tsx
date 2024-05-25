@@ -1,10 +1,12 @@
 import React, { useCallback, useState } from 'react';
-import { Alert, FlatList } from 'react-native';
+import { FlatList } from 'react-native';
 import {
   useFocusEffect,
   useNavigation,
   useRoute,
 } from '@react-navigation/native';
+
+import { showMessage } from 'react-native-flash-message';
 
 import { HomeContainer } from './styles';
 import Header from '../../components/Header';
@@ -49,7 +51,11 @@ const Home = () => {
 
       setNews(data);
     } catch (error) {
-      Alert.alert('Erro ⚠', 'Não foi possível carregar as notícias.');
+      showMessage({
+        message: 'Erro ⚠',
+        description: 'Falha ao carregar as notícias.',
+        type: 'danger',
+      });
     } finally {
       setTimeout(() => {
         setIsLoading(false);

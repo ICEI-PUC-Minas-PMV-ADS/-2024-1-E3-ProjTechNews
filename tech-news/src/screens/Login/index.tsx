@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { LoginContainer, LoginContent } from './styles';
 
-import { Alert } from 'react-native';
+import { showMessage } from 'react-native-flash-message';
 
 import Header from '../../components/Header';
 import Button from '../../components/Button';
@@ -38,7 +38,11 @@ const Login = () => {
 
       navigation.navigate('home');
     } catch (error) {
-      Alert.alert('Erro ⚠', 'Usuário ou senha inválidos.');
+      showMessage({
+        message: 'Erro ⚠',
+        description: 'Usuário ou senha inválidos.',
+        type: 'danger',
+      });
     }
   };
 

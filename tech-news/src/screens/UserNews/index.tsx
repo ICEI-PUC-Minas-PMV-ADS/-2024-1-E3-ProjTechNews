@@ -7,11 +7,11 @@ import Header from '../../components/Header';
 import NewsCard from '../../components/NewsCard';
 import Button from '../../components/Button';
 import Loading from '../../components/Loading';
+import { ListEmpty } from '../../components/EmptyNews';
 
 import { useUser } from '../../contexts/userContext';
 
 import api from '../../lib/axios';
-import { ListEmpty } from '../../components/EmptyNews';
 
 type User = {
   id: number;
@@ -83,7 +83,7 @@ const UserNews = () => {
 
   return (
     <UserNewsContainer>
-      <Header showSignOutButton />
+      <Header showGoBackButton />
       <Button
         title="Adicionar Notícias"
         style={{ marginTop: 12, marginBottom: 12, width: '100%' }}

@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { Alert } from 'react-native';
+
+import { showMessage } from 'react-native-flash-message';
 
 import Header from '../../components/Header';
 import Input from '../../components/Input';
@@ -22,7 +23,11 @@ const SignUp = () => {
 
   const handleSignUp = async () => {
     if (confirmation !== password) {
-      Alert.alert('Erro ⚠', 'As senhas não coincidem.');
+      showMessage({
+        message: 'Erro ⚠',
+        description: 'As senhas não coincidem.',
+        type: 'danger',
+      });
       return;
     }
 
@@ -40,9 +45,17 @@ const SignUp = () => {
       setEmail('');
       setPassword('');
       setName('');
-      Alert.alert('Sucesso! 👍', 'Usuário cadastrado com sucesso!');
+      showMessage({
+        message: 'Sucesso! 👍',
+        description: 'Usuário cadastrado com sucesso!',
+        type: 'success',
+      });
     } catch (error) {
-      Alert.alert('Erro ⚠', 'Falha ao cadastrar usuário.');
+      showMessage({
+        message: 'Erro ⚠',
+        description: 'Falha ao cadastrar usuário.',
+        type: 'danger',
+      });
     } finally {
       navigation.navigate('login');
     }
