@@ -1,3 +1,9 @@
+# Demonstração da Gestão de Usuários na aplicação
+https://youtu.be/IxANZJsINVQ
+
+# Demonstração da Gestão de Notícias na aplicação
+https://youtu.be/6MfP68CXYIM
+
 ### CT-01 – Cadastrar perfil
 
 O usuário deve ser capaz de criar uma conta pessoal.
