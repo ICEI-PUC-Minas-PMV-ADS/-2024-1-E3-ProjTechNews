@@ -10,7 +10,6 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-- Guilherme Da Silva Santos Júnior
 - Paulo Romano da Silva
 - Pedro Henrique Aguilar de Almeida
 - Pedro Henrique Batista Costa
