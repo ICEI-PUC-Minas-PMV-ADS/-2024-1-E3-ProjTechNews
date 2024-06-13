@@ -100,8 +100,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-010 | Site deve ter um sistema de “tags”                              | MÉDIA      |
 | RF-011 | Site deve ter um sistema de filtro por tempo                    | BAIXA      |
 | RF-012 | Site deve exibir o usuário que adicionou a notícia              | BAIXA      |
-| RF-013 | O administrador deve ser capaz de gerenciar usuários            | ALTA       |
-| RF-014 | O administrador deve ser capaz de gerenciar notícias            | ALTA       |
+
 
 ### Requisitos não Funcionais
 
@@ -208,7 +207,6 @@ O grupo está organizado da seguinte forma:
            - Paulo Romano da Silva
            - Pedro Henrique Aguilar de Almeida
            - Pedro Henrique Batista Costa
-           - Lucas Henrique Vasconcelos Siqueira
 
 Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Projects nativo do Github, estruturado com as seguintes listas: 
 
