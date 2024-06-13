@@ -49,7 +49,3 @@ Os filtros ainda não foram implementados.
 A aplicação deve exibir o usuário que adicionou a notícia.
 O autor é exibido em todas as notícias postadas, portanto a funcionalidade foi implementada com sucesso.
 
-### CT-11 – Gerenciamento de Usuários, CT-12 – Gerenciamento de Notícias
-
-O administrador deve ser capaz de gerenciar usuários/notícias.
-Ainda não é possível alterar e excluir os usuários, portanto, são funcionalidades que serão desenvolvidas na próxima etapa.
