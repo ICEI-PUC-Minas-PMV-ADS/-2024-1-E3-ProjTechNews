@@ -1,5 +1,5 @@
 message: Please cite this software using these metadata.
-title:
+title: Projeto TechNews - Agregador de notícias
 authors:
   - family-names: Romano da Silva
     given-names: Paulo
@@ -16,4 +16,4 @@ keywords:
   - Tecnológia
 repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews 
 version: 1.0.0
-date-released: 2023-10-31
+date-released: 2024-06-19
