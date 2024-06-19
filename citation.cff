@@ -1,29 +1,19 @@
 message: Please cite this software using these metadata.
 title:
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names: Romano da Silva
+    given-names: Paulo
+  - family-names: Henrique Aguilar de Almeida 
+    given-names: Pedro
+  - family-names: Henrique Batista Costa
+    given-names: Pedro
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: de Macêdo Neto
+    given-names: Cristiano
 keywords:
-  - 
-  - 
-repository-code: 
+  - Notícias
+  - Tecnológia
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/2024-1-E3-ProjTechNews 
 version: 1.0.0
 date-released: 2023-10-31
